@@ -12,31 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_03_15_161539) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.string "category"
-    t.text "content"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_articles_on_user_id"
-  end
-
-  create_table "interactions", force: :cascade do |t|
-    t.boolean "has_read", default: false, null: false
-    t.boolean "read_later", default: false, null: false
-    t.boolean "liked", default: false, null: false
-    t.bigint "user_id", null: false
-    t.bigint "article_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["article_id"], name: "index_interactions_on_article_id"
-    t.index ["user_id"], name: "index_interactions_on_user_id"
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -64,7 +41,28 @@ ActiveRecord::Schema.define(version: 2021_03_15_161539) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
 
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "category"
+    t.text "content"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_articles_on_user_id"
+  end
+
+  create_table "interactions", force: :cascade do |t|
+    t.boolean "has_read", default: false, null: false
+    t.boolean "read_later", default: false, null: false
+    t.boolean "liked", default: false, null: false
+    t.bigint "user_id", null: false
+    t.bigint "article_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["article_id"], name: "index_interactions_on_article_id"
+    t.index ["user_id"], name: "index_interactions_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -80,12 +78,9 @@ ActiveRecord::Schema.define(version: 2021_03_15_161539) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "articles", "users"
   add_foreign_key "interactions", "articles"
   add_foreign_key "interactions", "users"
-
-  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-
 end
