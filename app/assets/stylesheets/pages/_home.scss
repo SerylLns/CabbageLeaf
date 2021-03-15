@@ -1,1 +1,31 @@
 // Specific CSS for your home-page
+.home-border{
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid black;
+  .home-title{
+    text-align: center;
+    font-size: 30px;
+  }
+  .home-text{
+    font-size: 17px;
+  }
+  .home-logo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 37vh;
+    left: 50%;
+  }
+}
+
+.home-divider{
+  width: 15vw;
+  height: 3px;
+  background-color: black;
+}
