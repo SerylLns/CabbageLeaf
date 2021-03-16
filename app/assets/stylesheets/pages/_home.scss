@@ -21,6 +21,7 @@
 
 .home-border{
   // display: none;
+  position: relative;
   background-color: white;
   width: 90vw;
   height: 90vh;
@@ -41,7 +42,7 @@
   .home-logo{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 37vh;
+    top: 30vh;
     left: 50%;
   }
 }
