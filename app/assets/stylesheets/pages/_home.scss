@@ -1,5 +1,28 @@
 // Specific CSS for your home-page
+.home-first-part{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  // animation-iteration-count: infinite;
+  // animation: fade 6s linear 3s  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-direction: row;
+}
+// @keyframes fade{
+//   to{
+//     opacity: 0;
+//     height: 0;
+//     width: 0;
+//     visibility: hidden;
+//   }
+// }
+
 .home-border{
+  // display: none;
+  position: relative;
+  background-color: white;
   width: 90vw;
   height: 90vh;
   margin: auto;
@@ -19,7 +42,7 @@
   .home-logo{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 37vh;
+    top: 30vh;
     left: 50%;
   }
 }
@@ -28,4 +51,14 @@
   width: 15vw;
   height: 3px;
   background-color: black;
+}
+
+.color-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  background-color: blue;
 }

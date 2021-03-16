@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :show] do
     resources :interactions, only: [:show, :new]
   end
+
+get "account", to: "pages#account"
+
 end
