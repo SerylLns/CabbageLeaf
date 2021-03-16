@@ -1,4 +1,5 @@
 // Specific CSS for your home-page
+
 .home-first-part{
   width: 100vw;
   height: 100vh;
@@ -53,6 +54,11 @@
   background-color: black;
 }
 
+.full-page {
+  height: 100vh;
+  animation: gradient 3s;
+}
+
 .color-top{
   position: absolute;
   top: 0;
@@ -60,5 +66,21 @@
   width: 100vw;
   height: 50vh;
   z-index: -1;
-  background-color: blue;
+  background-color: #F2CD13;
+}
+
+.color-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  background-color: #A6CCFF;
+}
+
+@keyframes gradient {
+  0%   { opacity: 0; }
+  50%   { opacity: .4; }
+  100% { opacity: .6; }
 }
