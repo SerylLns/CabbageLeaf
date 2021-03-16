@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def account
+    @articles = current_user.articles
   end
 end
