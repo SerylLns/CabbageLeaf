@@ -3,7 +3,7 @@
 const animHome = () => {
   const homeFirstPart = document.querySelector(".home-first-part");
   const part2 = document.querySelector(".full-page");
-
+  const buttonMood = document.querySelector(".btn-mood");
   if (homeFirstPart) {
     const logoTimeline = anime.timeline({
       autoplay: true
@@ -11,15 +11,17 @@ const animHome = () => {
     const homeTimeline = anime.timeline({
       autoplay: false
     });
+    const themeTimeline = anime.timeline({
+      autoplay: false
+    });
     logoTimeline
       .add({
         targets: homeFirstPart,
         duration: 2700,
         easing: "linear",
-        scale: {
+        opacity: {
           value: 0,
           duration: 2000,
-          offset:0,
           easing: 'linear',
         },
         delay: 1500,
@@ -49,7 +51,39 @@ const animHome = () => {
             easing: 'easeInOutQuart'
           }
         })
-    }
+        .add({
+          targets: ".home-border",
+          opacity:{
+            value: 0,
+            duration: 3000
+          },
+          delay: 2000
+        })
+          .add({
+            targets:".color-top",
+            opacity: 1,
+            duration: 1000,
+            easing: 'linear'
+          })
+          .add({
+            targets:".color-bottom ",
+            opacity: 1,
+            duration: 1000,
+            easing: 'linear'
+          })
+          .add({
+            targets: buttonMood,
+            opacity: 1,
+            duration: 1000,
+            easing: 'linear'
+          })
+          complete: (anim) => {
+            const borderHome = document.querySelector('.home-border');
+            borderHome.hidden = true;
+          }
+    };
+    // 
+
 }
 
 export { animHome }
