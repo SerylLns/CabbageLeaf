@@ -28,13 +28,22 @@
   width: 97%;
   margin: 5px auto;
 }
+.divider{
+  width: 8vw;
+  height: 3px;
+  background-color: $light-lavander;
+  content: "";
+  margin: 10px auto;
+  border-radius: 25%;
+
+}
 .index-tags{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .index-tag{
-  background-color:$blue;
+  background-color: $blue;
   color: $dark-blue;
   border-radius: 3px;
   font-weight: 300;
@@ -42,4 +51,18 @@
   padding: 3px 5px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
+}
+.button-index{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  border: 1px solid red;
+}
+.btn-save-index{
+  height: 5vh;
+  border: none;
+
 }
