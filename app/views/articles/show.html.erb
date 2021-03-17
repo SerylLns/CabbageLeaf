@@ -1,6 +1,19 @@
+<div class="background">
+  <div class="picture-up">
+    <%= cl_image_tag @article.photo.key, height: 300, crop: :fill %>
+  </div>
+  <div class="card-white">
+    <div class= "title"> <%= @article.title %></div>
+    <span class="divider"></span>
+    <div class="date-creation">
+      <%= @article.created_at.localtime.strftime("Le %d/%m/%Y à %k:%M") %>
+    </div>
+    <div class="time-read">
+      <p>Temps de lecture 4 min</p>
+    </div>
+    <div class="text">
+      <p> <%= @article.content %></p>
+    </div>
+  </div>
+</div>
 
-<%= render  "shared/navbar" %>
-<h1>hihi</h1>
-<img src="<%= @article.photo.url %>">
-<%= @article.title %>
-<%= @article.content %>
