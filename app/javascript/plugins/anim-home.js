@@ -32,12 +32,14 @@ const animHome = () => {
         .add({
           targets:".color-top",
           top: 0,
-          duration: 1500
+          duration: 1500,
+          easing: 'linear'
         })
         .add({
           targets:".color-bottom ",
           bottom: 0,
-          duration: 1500
+          duration: 1500,
+          easing: 'linear'
         })
         .add({
           targets: ".home-border",
@@ -45,7 +47,7 @@ const animHome = () => {
             value: 1,
             duration: 1000,
             easing: 'easeInOutQuart'
-          } 
+          }
         })
     }
 }
