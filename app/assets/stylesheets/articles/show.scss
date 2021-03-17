@@ -3,8 +3,38 @@
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
 }
 
+.picture-up {
+  background-attachment: scroll;
+}
+
 .card {
   background-color: white;
   border-radius: 5px;
 
+}
+
+.title {
+  color: #021E73;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.date-creation {
+  color: #C4C4C4;
+  text-align: center;
+  font-size: 14px;
+}
+
+.time-read {
+  color: #949494;
+  text-align: center;
+  font-size: 12px;
+}
+
+.text {
+  text-align: center;
+  color: #02144E;
+  font-size: 16px;
 }
