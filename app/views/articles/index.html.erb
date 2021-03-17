@@ -1,44 +1,43 @@
 
-<% @articles.each do |article| %>
 <div class="index-page">
-
+<% @articles.each do |article| %>
 
   <div class="index-card"> <%# 1carte %>
-    <div class="image-card">
-      <%= cl_image_tag article.photo.key,  crop: :fill %>
-    </div>
-    <div class="index-content">
-      <%= link_to article_path(article) do  %>
-        <div class= "title"> <%= article.title %></div>
-      <% end %>
-      <div class="divider"></div>
-      <div class="index-tags">
-        <% article.category.split(",").each do |cat| %>
-        <p class="index-tag">#<%= cat %></p>
+  <div class="my-card">
+      <div class="image-card">
+        <%= cl_image_tag article.photo.key,  crop: :fill %>
+      </div>
+      <div class="index-content">
+        <%= link_to article_path(article) do  %>
+          <div class= "title"> <%= article.title %></div>
+        <% end %>
+        <div class="divider"></div>
+        <div class="index-tags">
+          <% article.category.split(",").each do |cat| %>
+          <p class="index-tag">#<%= cat %></p>
+          <% end %>
+        </div>
+        <div class="index-text">
+          <p> <%= article.content[0..200] %></p>
+        </div>
+      </div>
+      <div class="button-index">
+        <%# BTN DElete %>
+        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-09_ipu2g2",  id:"delete-btn", class: "btn-index") %>  
+        <%# BTN SAVE %>
+          <%= link_to  article_interactions_path(article), method: "post" do %>
+            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-10_fblyxu",  class: "btn-index", id: "btn-save") %>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+          <% end %>
+        <%# BTN Valider %>
+        <%= link_to article_path(article) do  %>
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-11_sro6wu", class: "btn-index")%>
         <% end %>
       </div>
-      <div class="index-text">
-        <p> <%= article.content[0..200] %></p>
-      </div>
-    </div>
-    <div class="button-index">
-      <%# BTN DElete %>
-      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-09_ipu2g2", width: 80, id:"delete-btn") %>  
-      <%# BTN SAVE %>
-      <form action="/articles/<%=article.id%>/interactions" method="post">
-        <btn type="submit" class="btn-save-index">
-          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-10_fblyxu", width: 80) %>
-        </btn>
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-      </form>
-      <%# BTN Valider %>
-      <%= link_to article_path(article) do  %>
-        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-11_sro6wu", width: 80)%>
-      <% end %>
     </div>
   </div>
 
 
 
-</div>
 <% end %>
+</div>
