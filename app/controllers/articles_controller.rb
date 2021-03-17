@@ -6,11 +6,18 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @artcile = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def rank
-    @articles = Article.all
+    articles = Article.all
+    likes = articles.interactions.where(liked = true)
+    reads
+    saves
+
+    @most_liked = articles(:order => "")
+    @most_read
+    @most_saved
   end
 
 end
