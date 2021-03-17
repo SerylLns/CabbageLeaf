@@ -21,12 +21,11 @@ ActiveStorage.start()
 // External imports
 import "bootstrap";
 import { animHome } from '../plugins/anim-home'
+import { animMenu } from '../plugins/anim-menu'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
-  const homeFirstPart = document.querySelector(".home-first-part");
-animHome();
+  animHome();
+  animMenu();
 });

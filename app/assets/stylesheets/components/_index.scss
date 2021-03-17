@@ -1,4 +1,7 @@
 // Import your components CSS files here.
+body{
+  overflow-x: hidden;
+}
 @import "alert";
 @import "avatar";
 @import "navbar";
