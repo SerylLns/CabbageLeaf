@@ -30,5 +30,14 @@ document.addEventListener('turbolinks:load', () => {
   // const homeFirstPart = document.querySelector(".home-first-part");
   // const part2 = document.querySelector(".full-page");
   animHome();
-  
+
+  const hamburger = document.querySelector(".barres")
+  hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("open");
+    // if(hamburger.classList.contains("active")){
+    //   timeline.play();
+    // } else {
+    //   timeline.reverse();
+    // }
+  });
 });
