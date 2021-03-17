@@ -1,33 +1,34 @@
-// Specific CSS for your home-page
-
+// /* PARTIE 1 */
 .home-first-part{
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   // animation-iteration-count: infinite;
   // animation: fade 6s linear 3s  ;
   display: flex;
   justify-content: center;
   align-items: center;
-  // flex-direction: row;
-}
-// @keyframes fade{
-//   to{
-//     opacity: 0;
-//     height: 0;
-//     width: 0;
-//     visibility: hidden;
-//   }
-// }
+  img{
+    width: 50vw;
 
+  }
+}
+
+// /* PARTIE 2 */
+.full-page{
+  overflow: hidden;
+  height: 100vh;
+}
 .home-border{
-  // display: none;
   position: relative;
   background-color: white;
+  transition: 5s;
   width: 90vw;
   height: 90vh;
   margin: auto;
   margin-top: 5vh;
+  opacity: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,33 +55,30 @@
   background-color: black;
 }
 
-.full-page {
-  height: 100vh;
-  animation: gradient 3s;
-}
-
 .color-top{
   position: absolute;
-  top: 0;
+  top: -50vh;
   left: 0;
   width: 100vw;
   height: 50vh;
+  opacity: .6;
   z-index: -1;
   background-color: #F2CD13;
 }
 
 .color-bottom{
+  opacity: .6;
   position: absolute;
-  bottom: 0;
+  bottom: -50vh;
   left: 0;
   width: 100vw;
   height: 50vh;
-  z-index: -1;
+  z-index: 1;
   background-color: #A6CCFF;
 }
 
-@keyframes gradient {
-  0%   { opacity: 0; }
-  50%   { opacity: .4; }
-  100% { opacity: .6; }
-}
+// @keyframes gradient {
+//   0%   { opacity: 0; }
+//   50%   { opacity: .4; }
+//   100% { opacity: .6; }
+// }
