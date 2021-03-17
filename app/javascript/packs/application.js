@@ -28,5 +28,4 @@ import { animMenu } from '../plugins/anim-menu'
 document.addEventListener('turbolinks:load', () => {
   animHome();
   animMenu();
-  
 });
