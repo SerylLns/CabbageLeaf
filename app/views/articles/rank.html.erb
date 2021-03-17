@@ -1,2 +1,16 @@
 <%= render  "shared/navbar" %>
 <h1>Body</h1>
+<% @articles_liked.each do |article| %>
+  <%= article.title %>
+  <%= cl_image_tag article.photo.url %>
+<% end %>
+
+<% @articles_read.each do |article| %>
+  <%= article.title %>
+  <%= article.photo.url %>
+<% end %>
+
+<% @articles_saved.each do |article| %>
+  <%= article.title %>
+  <%= article.photo.url %>
+<% end %>
