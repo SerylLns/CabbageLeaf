@@ -1,17 +1,23 @@
 .background {
   background: rgb(166,204,255);
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
+  position: relative;
 }
 
-.picture-up {
-  background-attachment: scroll;
-}
+// .picture-up {
+//   // background-attachment: scroll;
+//   height: 200px;
+// }
 
 .card-white {
   background-color: white;
-  border-radius: 5px;
-
-
+  border-radius: 6px;
+  margin: 20px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
+  top: 80%;
+  margin-bottom: 50px;
 
 }
 
