@@ -59,8 +59,41 @@
 .menu{
   width: 70vw;
   height: 100vh;
-  background-color: $light-lavander;
-  right: 0;
+  background-color: $very-light-lavander;
+  right: 0px;
   position: absolute;
   z-index: 3;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
+.menu ul {
+  padding-left: 3vw;
+}
+.menu-item{
+  list-style: none;
+  margin-top: 3vh;
+}
+.menu-item img{
+  height: 5vh;
+}
+.menu-item a{
+  letter-spacing: 0.4em;
+  font-weight: 300;
+  color: $dark-blue;
+  font-size: 16px;
+}
+.menu-item a:hover{
+  font-weight: bolder;
+  text-decoration: none;
+}
+.social-media{
+  margin-left: 4vw;
+  margin-top: 4vh;
+}
+.social-media i{
+  margin-right: 2vw;
+  color: $light-lavander;
+}
+
