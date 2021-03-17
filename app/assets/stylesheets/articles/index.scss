@@ -4,15 +4,42 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
   justify-content: center;
 }
 .index-card{
+  background: white;
   margin-top: 2vh;
-  width: 80vw;
+  width: 90vw;
   height: 85vh;
-  border: 1px solid black;
   border-radius: 5px;
 }
 .image-card img{
   width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.index-content{
+  width: 90%;
+  text-align: center;
+  margin: 15px auto;
+}
+.index-text{
+  width: 97%;
+  margin: 5px auto;
+}
+.index-tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.index-tag{
+  background-color:$blue;
+  color: $dark-blue;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.37em;
 }
