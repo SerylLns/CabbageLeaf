@@ -10,7 +10,14 @@ class ArticlesController < ApplicationController
   end
 
   def rank
-    @articles = Article.all
+    articles = Article.all
+    likes = articles.interactions.where(liked = true)
+    reads
+    saves
+
+    @most_liked = articles(:order => "")
+    @most_read
+    @most_saved
   end
 
 end
