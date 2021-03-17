@@ -20,7 +20,7 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
-
+import { animHome } from '../plugins/anim-home'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -28,11 +28,7 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   // const homeFirstPart = document.querySelector(".home-first-part");
-
-  // setTimeout(() => {
-  //   homeFirstPart.style.visibility = "hidden"
-  // }, 3000);
-
-
-
+  // const part2 = document.querySelector(".full-page");
+  animHome();
+  
 });
