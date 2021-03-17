@@ -27,11 +27,11 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  // const homeFirstPart = document.querySelector(".home-first-part");
+  const homeFirstPart = document.querySelector(".home-first-part");
 
-  // setTimeout(() => {
-  //   homeFirstPart.style.visibility = "hidden"
-  // }, 3000);
+  setTimeout(() => {
+    homeFirstPart.style.visibility = "hidden"
+  }, 3000);
 
 
 
