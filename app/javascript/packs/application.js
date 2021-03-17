@@ -26,8 +26,6 @@ import { animMenu } from '../plugins/anim-menu'
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-
   animHome();
   animMenu();
-
 });
