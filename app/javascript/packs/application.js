@@ -20,7 +20,7 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
-
+import { animHome } from '../plugins/anim-home'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -32,7 +32,6 @@ document.addEventListener('turbolinks:load', () => {
   setTimeout(() => {
     homeFirstPart.style.visibility = "hidden"
   }, 3000);
-
 
 
 });
