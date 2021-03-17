@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
   def rank
 
     @articles_liked = Article.all.joins(:interactions).where('interactions.liked = true').order("interactions asc").limit(3)
-    @articles_read = Article.all.joins(:interactions).where('interactions.has_read = true').order("interactions asc").limit(3)
+    # @articles_read = Article.all.joins(:interactions).where('interactions.has_read = true').order("interactions asc").limit(3)
     @articles_saved = Article.all.joins(:interactions).where('interactions.read_later = true').order("interactions asc").limit(3)
 
   end
