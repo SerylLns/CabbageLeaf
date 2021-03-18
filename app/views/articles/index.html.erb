@@ -18,7 +18,8 @@
           <% end %>
         </div>
         <div class="index-text">
-          <p> <%= article.content[0..200] %></p>
+          <p> <%= article.content[0..150] %>... 
+            <a href="articles/<%=article.id%>" style="color:black;">Lire la suite</a> </p>
         </div>
       </div>
       <div class="button-index">

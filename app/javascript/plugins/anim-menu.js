@@ -1,4 +1,3 @@
-
 const animMenu = () => {
   const menu = document.querySelector('.menu')
   const hamburger = document.querySelector(".barres")

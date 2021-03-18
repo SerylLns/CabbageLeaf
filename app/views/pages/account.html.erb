@@ -1,0 +1,25 @@
+<div class="account-page">
+  <div class="account-profil">
+    <div class="account-photo">    
+    </div>
+    <h3 class="account-name"><%= current_user.username %></h3>
+    <p>je sais pas</p>
+    <select name="select" id=""></select>
+  </div>
+  <% @articles.each do |article| %>
+    <div class="account-card">
+      <img src="<%=article.photo.url%>" alt="" class="img-card-top">
+      <%= link_to article_path(article) do  %>
+        <h4 class="account-card-title"><%= article.title %></h4>
+      <% end %>
+      <div class="divider"></div>
+      <div class="index-tags">
+            <% article.category.split(",").each do |cat| %>
+            <p class="index-tag">#<%= cat %></p>
+            <% end %>
+      </div>
+    </div>
+  <% end %>
+
+
+</div>
