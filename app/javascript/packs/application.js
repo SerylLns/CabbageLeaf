@@ -22,12 +22,13 @@ ActiveStorage.start()
 import "bootstrap";
 import { animHome } from '../plugins/anim-home'
 import { animMenu } from '../plugins/anim-menu'
+import { animCard } from '../plugins/animate-indexcard'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   animHome();
   animMenu();
-
+  animCard();
   // document.style.setProperty("$light-lavander", "#F2CD13")
 });
