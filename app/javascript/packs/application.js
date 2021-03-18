@@ -27,8 +27,8 @@ import { animCard } from '../plugins/animate-indexcard'
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  animHome();
   animMenu();
+  animHome();
   animCard();
   // document.style.setProperty("$light-lavander", "#F2CD13")
 });
