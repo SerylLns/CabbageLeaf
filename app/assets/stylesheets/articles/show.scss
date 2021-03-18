@@ -2,26 +2,30 @@
   background: rgb(166,204,255);
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
   position: relative;
+  z-index: 1;
+  height: 400vh;
 }
 
-// .picture-up {
-//   // background-attachment: scroll;
-//   height: 200px;
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
+.picture-up {
+  background-attachment: scroll;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
 
-// }
+}
 
 .card-white {
   background-color: white;
   border-radius: 6px;
   margin: 20px;
   padding: 10px;
-  z-index: 1000;
+  z-index: 3;
   box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
-  top: 80%;
+  top: 25vh;
   margin-bottom: 50px;
+  position: absolute;
 
 }
 
@@ -41,13 +45,14 @@
 
 // }
 
-.date-creation {
-  color: #C4C4C4;
-  text-align: center;
-  font-size: 14px;
-}
+// .date-creation {
+//   color: #C4C4C4;
+//   text-align: center;
+//   font-size: 14px;
+// }
 
-.time-read {
+.time-read,
+.date-creation {
   color: #949494;
   text-align: center;
   font-size: 12px;
@@ -55,7 +60,7 @@
 
 .text {
   text-align: left;
-  color: #02144E;
+  color: $dark-blue;
   font-size: 16px;
   line-height: 1.4em;
 }
