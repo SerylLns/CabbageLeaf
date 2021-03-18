@@ -11,6 +11,14 @@ const animHome = () => {
     const homeTimeline = anime.timeline({
       autoplay: false
     });
+    // const lastPartTimeline = anime.timeline({
+    //   autoplay: false
+    // });
+    // lastPartTimeline.add({
+    //   targets: ".last-part",
+    //   opacity: 1
+    // })
+
     logoTimeline
       .add({
         targets: homeFirstPart,
@@ -42,18 +50,23 @@ const animHome = () => {
         .add({
           targets: ".home-border",
           opacity:{
-            value: 1,
-            duration: 1000,
+            value: 2,
             easing: 'easeInOutQuart'
-          }
+          },
+          duration: 500,
         })
         .add({
           targets: ".home-border",
           opacity:{
-            value: 0,
-            duration: 2000
+            value: 0.3,
           },
-          delay: 1500
+          duration: 1000,
+          delay: 3500
+        })
+        .add({
+          targets: ".last-part",
+          opacity: 1,
+          duration: 2000
         })
           .add({
             targets:".color-top",
@@ -71,13 +84,15 @@ const animHome = () => {
             targets: buttonMood,
             opacity: 1,
             duration: 1000,
-            easing: 'linear'
-            
+            easing: 'linear',
+            complete: function (homeTimeline) {
+              const borderHome = document.querySelector('.home-border');
+              borderHome.hidden = true;
+              const lastPageHome = document.querySelector('.last-part');
+              lastPageHome.hidden = true
+            }
           })
-          complete: (anim) => {
-            const borderHome = document.querySelector('.home-border');
-            borderHome.hidden = true;
-          }
+
     };
 }
 

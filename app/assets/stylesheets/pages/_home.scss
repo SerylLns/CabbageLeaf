@@ -73,6 +73,7 @@
   position: absolute;
   bottom: -50vh;
   left: 0;
+  opacity: .6;
   width: 100vw;
   height: 50vh;
   z-index: 3;
@@ -112,11 +113,14 @@
 
 // LAST PART
 .last-part{
+
   width: 90vw;
   height: 90vh;
-  
   margin: 5vh auto;
-  position: relative;
+  top: 0vh;
+  left: 5vw;
+  opacity: 0;
+  position: absolute;
   background-color: white;
   z-index: 10;
   display: flex;
