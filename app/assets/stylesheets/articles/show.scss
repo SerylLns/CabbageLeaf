@@ -7,6 +7,10 @@
 // .picture-up {
 //   // background-attachment: scroll;
 //   height: 200px;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
 // }
 
 .card-white {
@@ -29,6 +33,14 @@
   font-weight: bold;
 }
 
+// .hr {
+//   border: 2px solid #A9A6FF;
+//   width : 200px;
+//   height: 2px
+
+
+// }
+
 .date-creation {
   color: #C4C4C4;
   text-align: center;
@@ -42,7 +54,8 @@
 }
 
 .text {
-  text-align: justify;
+  text-align: left;
   color: #02144E;
   font-size: 16px;
+  line-height: 1.4em;
 }
