@@ -11,9 +11,6 @@ const animHome = () => {
     const homeTimeline = anime.timeline({
       autoplay: false
     });
-    const themeTimeline = anime.timeline({
-      autoplay: false
-    });
     logoTimeline
       .add({
         targets: homeFirstPart,
@@ -76,14 +73,13 @@ const animHome = () => {
             opacity: 1,
             duration: 1000,
             easing: 'linear'
+            
           })
           complete: (anim) => {
             const borderHome = document.querySelector('.home-border');
             borderHome.hidden = true;
           }
     };
-    // 
-
 }
 
 export { animHome }

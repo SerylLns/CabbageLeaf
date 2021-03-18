@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'articles/rank', to: 'articles#rank'
   resources :articles, only: [:index, :show] do
-    resources :interactions, only: [:show, :new]
+    resources :interactions, only: [:show, :new, :create]
   end
 
 get "account", to: "pages#account"

@@ -28,4 +28,6 @@ import { animMenu } from '../plugins/anim-menu'
 document.addEventListener('turbolinks:load', () => {
   animHome();
   animMenu();
+
+  // document.style.setProperty("$light-lavander", "#F2CD13")
 });
