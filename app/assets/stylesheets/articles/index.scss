@@ -1,15 +1,21 @@
 @import "show";
 .index-page{
-  width: 100vw;
   height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.index-card{
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
   justify-content: center;
 }
-.index-card{
+.my-card{
   background: white;
-  margin-top: 2vh;
+  margin: 2vh 5vw;
   width: 90vw;
   height: 85vh;
   border-radius: 5px;
@@ -47,22 +53,14 @@
   color: $dark-blue;
   border-radius: 3px;
   font-weight: 300;
-  font-size: 12px;
-  padding: 3px 5px;
+  font-size: 10px;
+  padding: 4px 5px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
 }
-.button-index{
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 7vh;
-  border: 1px solid red;
-}
-.btn-save-index{
-  height: 5vh;
-  border: none;
 
-}
+// #delete-btn{
+//   height: 8vh;
+//   border-radius: 50%;
+//   background-color: $blue;
+// }
