@@ -1,22 +1,22 @@
 
 const animCard = () => {
-  const buttonSupp = document.querySelector("#delete-btn");
-  const cards = document.querySelectorAll(".my-card")
+  const buttonSupp = document.querySelectorAll("#delete-btn");
+  const cards = document.querySelectorAll(".index-card")
   let index = 0;
   if (buttonSupp) {
-    buttonSupp.addEventListener("click", (e)=>{
-      const cardsTimeline = anime.timeline({ autoplay: true });
-      cardsTimeline.add({
-        targets: cards[index],
-        opacity: 0,
-        duration: 1000,
-        complete: (anim) => {
-          cards[index].hidden = true;
-          index++;
-          console.log(index);
-        }
-      })
+    buttonSupp.forEach(button => {
+      button.addEventListener("click", (e)=>{
+        anime({
+          targets: e.path[3],
+          opacity: 0,
+          duration: 1000,
+          complete: (anim) => {
+            e.path[3].hidden = true;
+          }
+        })
+      });      
     });
+
   }
 };
 

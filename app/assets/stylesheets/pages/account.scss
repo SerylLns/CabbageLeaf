@@ -1,0 +1,32 @@
+.account-page{
+  width: 100vw;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.account-profil{
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 20vh;
+  background-color: $blue;
+}
+
+.account-card{
+  z-index: 3;
+  opacity: .9;
+  width: 80vw;
+  height: 60vh;
+  margin: 0 auto 0 auto;
+  padding-top: 15vh;
+}
+.img-card-top{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 50%;
+  width: 100%;
+}
+.account-card-title{
+  text-align: center;
+  margin-top: 3vh;
+}

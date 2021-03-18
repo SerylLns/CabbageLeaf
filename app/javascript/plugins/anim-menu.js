@@ -1,8 +1,6 @@
-
-const menu = document.querySelector('.menu')
-const hamburger = document.querySelector(".barres")
-
 const animMenu = () => {
+  const menu = document.querySelector('.menu')
+  const hamburger = document.querySelector(".barres")
   if(hamburger){
     const openMenuTimeline = anime.timeline({
       autoplay: false

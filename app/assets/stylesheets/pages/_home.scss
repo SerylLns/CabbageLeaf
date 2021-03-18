@@ -88,15 +88,43 @@
   z-index: 5;
 }
 .zen-mood{
-  bottom: 98vw;
-  right: 23vw;
+  bottom: 103vw;
+  right: 22vw;
   background-color:#A6CCFF;
 }
 .peps-mood{
-  top: 98vw;
+  top: 103vw;
   background-color: #F2CD13;
   right: 7vw;
 }
 .btn-mood{
   opacity: 0;
+}
+.mood{
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+// LAST PART
+.last-part{
+  width: 90vw;
+  height: 90vh;
+  
+  margin: 5vh auto;
+  position: relative;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.last-part p{
+  text-align: center;
+  width: 85%;
 }

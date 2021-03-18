@@ -14,14 +14,13 @@ const animHome = () => {
     logoTimeline
       .add({
         targets: homeFirstPart,
-        duration: 2700,
         easing: "linear",
         opacity: {
           value: 0,
           duration: 2000,
           easing: 'linear',
         },
-        delay: 1500,
+        delay: 1000,
         complete: (anim) => {
           part2.removeAttribute("hidden");
           homeTimeline.play();
@@ -31,13 +30,13 @@ const animHome = () => {
         .add({
           targets:".color-top",
           top: 0,
-          duration: 1500,
+          duration: 1000,
           easing: 'linear'
         })
         .add({
           targets:".color-bottom ",
           bottom: 0,
-          duration: 1500,
+          duration: 1000,
           easing: 'linear'
         })
         .add({
@@ -52,9 +51,9 @@ const animHome = () => {
           targets: ".home-border",
           opacity:{
             value: 0,
-            duration: 3000
+            duration: 2000
           },
-          delay: 2000
+          delay: 1500
         })
           .add({
             targets:".color-top",
