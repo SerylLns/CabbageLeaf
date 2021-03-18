@@ -1,0 +1,98 @@
+body {
+  font-family: Roboto;
+}
+
+.all{
+  background-color: #E5E5E5;
+}
+
+.msg_log {
+  color: $dark-blue;
+  width: 50%;
+  padding-top: 112px;
+  padding-left: 10%;
+}
+
+.form_log {
+  margin-left: 10%;
+  width: 80%;
+  background-color: $ciel;
+  border-radius: 5px;
+  position: relative;
+}
+
+.title-form {
+  margin-left: 99px;
+  width: 122px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  position: absolute;
+  top: -15px;
+}
+
+h1 {
+  color: $dark-blue;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.email,.password {
+  padding-top: 15px;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+}
+
+.password{
+  padding-top: 0px;
+}
+
+
+#user_password, #user_email {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+.all > a {
+  color: $dark-blue;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.form-check-label {
+  color: $dark-blue;
+}
+
+.sign-up {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  font-variant: small-caps;
+}
+
+.ton-compte {
+  margin-top: 15px;
+  margin-left: 44%;
+  margin-right: 5%;
+}
+
+.ton-compte > a {
+  color: $dark-blue;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  font-variant: small-caps;
+  &:hover{
+    text-decoration: none;
+  }
+}
