@@ -1,9 +1,10 @@
-// /* PARTIE 1 */
+// /* PARTIE 1 LOGO */
 .home-first-part{
   width: 100vw;
   display: none;
   height: 100vh;
   position: absolute;
+  z-index: -1;
   // animation-iteration-count: infinite;
   // animation: fade 6s linear 3s  ;
   display: flex;
@@ -14,7 +15,7 @@
   }
 }
 
-// /* PARTIE 2 */
+// /* PARTIE 2 WELCOME...*/
 .full-page{
   overflow: hidden;
   height: 100vh;
@@ -54,7 +55,7 @@
   height: 3px;
   background-color: black;
 }
-
+// COLOR BACKGROUND
 .color-top{
   position: absolute;
   top: -50vh;
@@ -62,23 +63,40 @@
   width: 100vw;
   height: 50vh;
   opacity: .6;
-  z-index: -1;
-  background-color: #F2CD13;
+  z-index: 1;
+  background-color: $sun;
+  display: flex;
+  align-items: flex-end;
 }
 
 .color-bottom{
-  opacity: .6;
   position: absolute;
   bottom: -50vh;
   left: 0;
   width: 100vw;
   height: 50vh;
-  z-index: 1;
+  z-index: 3;
   background-color: #A6CCFF;
 }
-
-// @keyframes gradient {
-//   0%   { opacity: 0; }
-//   50%   { opacity: .4; }
-//   100% { opacity: .6; }
-// }
+// BUTTON(ARROW) ZEN PEPS
+.peps-mood, .zen-mood{
+  position: absolute;
+  width: 16vw;
+  height: 8vh;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 5;
+}
+.zen-mood{
+  bottom: 98vw;
+  right: 23vw;
+  background-color:#A6CCFF;
+}
+.peps-mood{
+  top: 98vw;
+  background-color: #F2CD13;
+  right: 7vw;
+}
+.btn-mood{
+  opacity: 0;
+}
