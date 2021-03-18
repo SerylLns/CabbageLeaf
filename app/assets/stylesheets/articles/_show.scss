@@ -1,0 +1,70 @@
+.background {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(169,166,255,1) 44%, rgba(166,204,255,1) 100%);
+  position: relative;
+  height: 200vh;
+}
+
+.picture-up {
+  background-attachment: scroll;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.fleche-back {
+  background-image: url("../../arrow-back.png");
+  height: 4vh;
+  width: 7vh;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.card-white {
+  background-color: white;
+  border-radius: 6px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
+  top: 27vh;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+.title {
+  color: $dark-blue;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Hurmegeo-bold";
+}
+
+.date-creation {
+  color: #949494;
+}
+
+.time-read, {
+  color: #C4C4C4;
+}
+
+.time-read,
+.date-creation {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Hurmegeo-light";
+}
+
+.text {
+  text-align: left;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: "Hurmegeo";
+}
