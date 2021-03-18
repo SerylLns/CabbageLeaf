@@ -1,11 +1,14 @@
 <div class="background">
   <div class="picture-up">
+    <div>
+      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
+    </div>
     <%= cl_image_tag @article.photo.key, height: 300, crop: :fill %>
   </div>
   <div class="card-white">
     <div class= "title"> <%= @article.title %></div>
-      <!-- <hr style="height: 3px; width: 13%; border: 1px solid #A9A6FF;"> -->
-     <div class="divider"></div>
+    <!-- <hr style="height: 3px; width: 13%; border: 1px solid #A9A6FF;"> -->
+    <div class="divider"></div>
     <div class="date-creation">
       <%= @article.created_at.localtime.strftime("Le %d/%m/%Y à %k:%M") %>
     </div>
@@ -17,4 +20,3 @@
     </div>
   </div>
 </div>
-
