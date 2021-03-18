@@ -5,6 +5,27 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
+@font-face {
+   font-family:'Hurmegeo-light';
+   src: url('HurmeGeometricSans4-Light');
+}
+
+@font-face {
+   font-family:'Hurmegeo';
+   src: url('HurmeGeometricSans4-Regular');
+}
+
+@font-face {
+   font-family:'Hurmegeo-bold';
+   src: url('HurmeGeometricSans4-Bold');
+}
+
+@font-face {
+   font-family:'Hurmegeo-black';
+   src: url('HurmeGeometricSans4-Black');
+}
+
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
