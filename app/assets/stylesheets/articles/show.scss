@@ -43,15 +43,17 @@
 
 // }
 
-// .date-creation {
-//   color: #C4C4C4;
-//   text-align: center;
-//   font-size: 14px;
-// }
+.date-creation {
+  color: #949494;
+
+}
+
+.time-read, {
+  color: #C4C4C4;
+}
 
 .time-read,
 .date-creation {
-  color: #949494;
   text-align: center;
   font-size: 12px;
 }
