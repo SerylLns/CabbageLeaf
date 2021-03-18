@@ -10,6 +10,7 @@
   z-index: 5;
 }
  
+
 .hamburger{
   position: absolute;
   width: 7vw;
@@ -69,14 +70,15 @@
   align-items: flex-end;
 }
 .menu ul {
-  padding-left: 3vw;
+  padding-left: 5vw;
 }
 .menu-item{
   list-style: none;
   margin-top: 3vh;
 }
 .menu-item img{
-  height: 5vh;
+  height: 3vh;
+  margin-right: 3vw;
 }
 .menu-item a{
   display: flex;
@@ -90,6 +92,9 @@
 .menu-item a p{
   padding-top: 4vw;
   margin: 0;
+}
+.menu-item a p:last-child{
+  margin-bottom: 10px;
 }
 .menu-item a:hover{
   font-weight: bolder;

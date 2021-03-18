@@ -1,1 +1,18 @@
 @import "show";
+.index-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index-card{
+  margin-top: 2vh;
+  width: 80vw;
+  height: 85vh;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.image-card img{
+  width: 100%;
+}
