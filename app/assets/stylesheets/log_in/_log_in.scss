@@ -1,43 +1,52 @@
 body {
-  font-family: Roboto;
+  background-color: white;
+  font-family:'Hurmegeo-light';
+
 }
 
 .all{
-  background-color: #E5E5E5;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .msg_log {
   color: $dark-blue;
   width: 50%;
   padding-top: 112px;
-  padding-left: 10%;
+  font-family:'Hurmegeo-light';
+  font-variant: small-caps;
+  font-size: 14px;
+  line-height: normal;
+  position: relative;
 }
 
 .form_log {
-  margin-left: 10%;
-  width: 80%;
+  width: 100%;
   background-color: $ciel;
   border-radius: 5px;
   position: relative;
 }
 
 .title-form {
-  margin-left: 99px;
   width: 122px;
   height: 30px;
   background: #FFFFFF;
   border-radius: 2px;
   position: absolute;
   top: -15px;
+  right: 108px;
+  text-align: center;
 }
 
 h1 {
   color: $dark-blue;
-  text-align: center;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  font-family:'Hurmegeo-bold';
+
 }
 
 .email,.password {
@@ -60,8 +69,15 @@ h1 {
   border-radius: 5px;
 }
 
-.all > a {
+.forgot {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.forgot > a {
   color: $dark-blue;
+  font-size: 10px;
+
   &:hover{
     text-decoration: none;
   }
@@ -81,8 +97,11 @@ h1 {
 
 .ton-compte {
   margin-top: 15px;
-  margin-left: 44%;
-  margin-right: 5%;
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  bottom: -70px;
+  right: 4px;
 }
 
 .ton-compte > a {
@@ -92,7 +111,71 @@ h1 {
   line-height: 16px;
   text-align: right;
   font-variant: small-caps;
+  font-family:'Hurmegeo-light';
+
   &:hover{
     text-decoration: none;
   }
+}
+
+.form-group > label {
+  padding-left: 20px;
+}
+
+.form-group > .form-control {
+  padding-top: 0px;
+  color: $dark-blue;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.form-check-imput {
+    padding-left: 20px;
+}
+
+.btn {
+  width: 122px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  margin-left: 31.5%;
+  color: $dark-blue;
+  font-family:'Hurmegeo';
+  padding-bottom: 6px;
+  font-variant: all-small-caps;
+  align-items: center;
+  &:hover{
+    box-shadow: 0px 1px 2px rgba(2, 30, 115, 0.3);
+    font-family:'Hurmegeo-bold';
+  }
+}
+
+.form-check {
+  margin-left: 20px;
+}
+
+.rec-bleu-top {
+  position: absolute;
+  top: 130px;
+  left: -30px;
+  width: 150px;
+  height: 20px;
+  background: rgba(169, 166, 255, 0.3);
+  border-radius: 3px;
+}
+
+.rec-bleu-bottom {
+  position: absolute;
+  bottom: -68px;
+  right: -40px;
+  width: 210px;
+  height: 20px;
+  background: rgba(169, 166, 255, 0.3);
+  border-radius: 3px;
+
+}
+.form-actions {
+  padding-bottom: 0px;
 }
