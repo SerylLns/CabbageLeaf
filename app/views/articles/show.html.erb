@@ -2,7 +2,10 @@
 <!-- image top + fleche back -->
   <div class="picture-up">
     <div>
-      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
+      <%= link_to :back do %>
+        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
+      <% end %>
+
     </div>
     <%= cl_image_tag @article.photo.key, height: 300, crop: :fill %>
   </div>
@@ -18,6 +21,18 @@
     </div>
     <div class="text">
       <p> <%= @article.content %></p>
+    </div>
+    <div class="btn-index">
+      <%= link_to article_interactions_path(@article), method: "post" do %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-22_pvbo9y") %>
+              <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+            <% end %>
+    </div>
+    <div class="btn-index">
+     <%= link_to article_interactions_path(@article), method: "post" do %>
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <% end %>
     </div>
   </div>
 </div>
