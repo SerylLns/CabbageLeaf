@@ -14,6 +14,7 @@
   background: white;
   margin: 2vh 5vh;
   width: 90vw;
+  z-index: 10;
   height: 85vh;
   border-radius: 5px;
 }
@@ -30,6 +31,12 @@
 .index-text{
   width: 97%;
   margin: 5px auto;
+  line-height: 18px;
+  color: $blue;
+  a {
+    color: $dark-blue;
+    font-weight: bold;
+  }
 }
 .divider{
   width: 8vw;
@@ -54,4 +61,11 @@
   padding: 4px 5px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
+}
+.chouquette{
+  position: absolute;
+  bottom: -10vh;
+  left: -15vw;
+  width: 78vw;
+  z-index: 3;
 }
