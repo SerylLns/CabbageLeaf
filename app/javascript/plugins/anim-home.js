@@ -11,13 +11,16 @@ const animHome = () => {
     const homeTimeline = anime.timeline({
       autoplay: false
     });
-    // const lastPartTimeline = anime.timeline({
-    //   autoplay: false
-    // });
-    // lastPartTimeline.add({
-    //   targets: ".last-part",
-    //   opacity: 1
-    // })
+    const lastPartTimeline = anime.timeline({
+      autoplay: false
+    });
+
+    lastPartTimeline.add({
+      targets:".color-bottom ",
+      bottom: 0,
+      duration: 1000,
+      easing: 'linear'
+    })
 
     logoTimeline
       .add({
@@ -32,6 +35,7 @@ const animHome = () => {
         complete: (anim) => {
           part2.removeAttribute("hidden");
           homeTimeline.play();
+          lastPartTimeline.play();
         },
       })
       homeTimeline
@@ -41,12 +45,12 @@ const animHome = () => {
           duration: 1000,
           easing: 'linear'
         })
-        .add({
-          targets:".color-bottom ",
-          bottom: 0,
-          duration: 1000,
-          easing: 'linear'
-        })
+        // .add({
+        //   targets:".color-bottom ",
+        //   bottom: 0,
+        //   duration: 1000,
+        //   easing: 'linear'
+        // })
         .add({
           targets: ".home-border",
           opacity:{
