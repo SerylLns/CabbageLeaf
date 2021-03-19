@@ -89,7 +89,7 @@
 // BUTTON(ARROW) ZEN PEPS
 .peps-mood, .zen-mood{
   position: absolute;
-  width: 16vw;
+  width: 10vh;
   height: 8vh;
   border-radius: 50%;
   background-color: white;
@@ -97,13 +97,13 @@
 }
 .zen-mood{
   bottom: 48vh;
-  right: 22vw;
+  right:14vh;
   background-color:#A6CCFF;
 }
 .peps-mood{
   top: 48vh;
   background-color: #F2CD13;
-  right: 7vw;
+  right: 5vh;
 }
 .btn-mood{
   opacity: 0;
