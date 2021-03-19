@@ -24,7 +24,7 @@
     <!-- boutons de bas de page -->
     <div class="conteuhnaire">
       <div class="btn-index" id="claps">
-        <%= link_to article_interactions_path(@article), method: "post" do %>
+        <%= link_to article_interactions_like_path(@article) do %>
         <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
         <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         <% end %>

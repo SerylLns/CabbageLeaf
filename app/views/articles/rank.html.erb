@@ -14,7 +14,7 @@
     </div>
     <div class="card-rank">
       <% @articles_liked.each do |article| %>
-        <%= cl_image_tag(article.photo.id) %>
+        <%= cl_image_tag(article.photo.url) %>
       <% end %>
     </div>
   </div>
