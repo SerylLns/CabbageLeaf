@@ -30,5 +30,11 @@ document.addEventListener('turbolinks:load', () => {
   animMenu();
   animHome();
   animCard();
+  // Swal.fire({
+  //   title: 'Error!',
+  //   text: 'Do you want to continue',
+  //   icon: 'error',
+  //   confirmButtonText: 'Cool'
+  // })
   // document.style.setProperty("$light-lavander", "#F2CD13")
 });

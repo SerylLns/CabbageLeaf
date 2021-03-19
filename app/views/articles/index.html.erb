@@ -18,7 +18,8 @@
           </div>
           <div class="index-text">
             <p> <%= article.content[0..150] %>... 
-              <a href="articles/<%=article.id%>" style="color:black;">Lire la suite</a> </p>
+              <a  href="articles/<%=article.id%>">LIRE LA SUITE</a> 
+              </p>
           </div>
         </div>
         <div class="buttons-index">
@@ -26,7 +27,7 @@
           <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-09_ipu2g2",  id:"delete-btn", class: "btn-index") %>  
           <%# BTN SAVE %>
             <%= link_to  article_interactions_path(article), method: "post" do %>
-              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-10_fblyxu",  class: "btn-index", id: "btn-save") %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9",  class: "btn-index", id: "btn-save") %>
               <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
             <% end %>
           <%# BTN Valider %>
@@ -35,8 +36,6 @@
           <% end %>
         </div>
       </div>
-
-
-
   <% end %>
+  <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/compo_index-04_sbkvyx",class: "chouquette") %>
 </div>
