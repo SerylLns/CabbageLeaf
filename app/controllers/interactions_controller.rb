@@ -1,17 +1,9 @@
 class InteractionsController < ApplicationController
 
-  def new
-    @interaction = Interaction.new
-  end
-
   def create
     #si l'utilisateur a cette article avec read_later return index
     # sinon
     article = Article.find(params[:article_id])
-    if interaction_exist?(article)
-      redirect_to articles_path, notice: "Vous avez déja enregistrer cet article :)" 
-      return
-    end
     interaction = Interaction.new
     interaction.user = current_user
     interaction.article = article
@@ -25,20 +17,24 @@ class InteractionsController < ApplicationController
     redirect_to article_path(@interaction.article)
   end
 
+  def like
+    article = Article.find(params[:article_id])
+    interaction = current_user.find_interaction(article)
+    if  interaction
+      interaction.liked = true
+      interaction.save
+    else
+      # interaction = create
+      interaction.save
+    end
+    redirect_to article_path(article)
+  end
+
   private
 
   def interaction_params
     params.require(:interaction).permit()
   end
 
-  def interaction_exist?(article)
-    interactions = current_user.interactions
-    interactions.each do |int|
-      if int.article == article
-        return true
-      end
-    end
-    return false
-  end
 
 end
