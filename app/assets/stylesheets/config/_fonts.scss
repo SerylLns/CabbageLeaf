@@ -7,22 +7,22 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 
 @font-face {
    font-family:'Hurmegeo-light';
-   src: url('HurmeGeometricSans4-Light');
+   src: font-url('HurmeGeometricSans4-Light.woff');
 }
 
 @font-face {
    font-family:'Hurmegeo';
-   src: url('HurmeGeometricSans4-Regular');
+   src: font-url('HurmeGeometricSans4-Regular.woff');
 }
 
 @font-face {
    font-family:'Hurmegeo-bold';
-   src: url('HurmeGeometricSans4-Bold');
+   src: font-url('HurmeGeometricSans4-Bold.woff');
 }
 
 @font-face {
    font-family:'Hurmegeo-black';
-   src: url('HurmeGeometricSans4-Black');
+   src: font-url('HurmeGeometricSans4-Black.woff');
 }
 
 
