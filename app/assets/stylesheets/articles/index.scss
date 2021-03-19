@@ -3,20 +3,24 @@
 .index-page{
   height: 100vh;
   overflow-y: hidden;
-  display: flex;
+  // display: flex;
   flex-direction: row;
-}
-.index-card{
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
-  justify-content: center;
+  justify-content: space-between;
 }
+// .index-card{
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   align-items: center;
+//   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
+//   justify-content: center;
+// }
 .my-card{
   background: white;
-  margin: 2vh 5vw;
+  margin: 2vh 5vh;
   width: 90vw;
   height: 85vh;
   border-radius: 5px;
