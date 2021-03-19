@@ -3,6 +3,8 @@
 const animHome = () => {
   const homeFirstPart = document.querySelector(".home-first-part");
   const part2 = document.querySelector(".full-page");
+  const mood = document.querySelector(".color-top .mood");
+  const mood2 = document.querySelector(".color-bottom .mood");
   const buttonMood = document.querySelector(".btn-mood");
   if (homeFirstPart) {
     const logoTimeline = anime.timeline({
@@ -70,7 +72,11 @@ const animHome = () => {
         .add({
           targets: ".last-part",
           opacity: 1,
-          duration: 2000
+          duration: 2000,
+          complete: (anim) => {
+            mood.removeAttribute("hidden");
+            mood2.removeAttribute("hidden");
+          },
         })
           .add({
             targets:".color-top",
