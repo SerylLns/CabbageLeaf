@@ -50,6 +50,17 @@
   color: #949494;
 }
 
+.conteuhnaire {
+  display: flex;
+  justify-content: center
+}
+
+#chou {
+  justify-content: center;
+  height: 7vh;
+  width: 7vh;
+}
+
 .time-read, {
   color: #C4C4C4;
 }
@@ -60,6 +71,29 @@
   font-size: 12px;
   font-family: "Hurmegeo-light";
 }
+
+.tag {
+  background-color: $ciel;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  z-index: 1;
+}
+
+.texte-tag {
+  color:$dark-blue;
+  text-align: center;
+  font-family:"Hurmegeo";
+  padding-right: 20px;
+  padding-left: 20px;
+  align-items: center;
+  space-around: 10px;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+
 
 .text {
   text-align: left;
