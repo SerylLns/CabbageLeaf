@@ -1,10 +1,17 @@
+// Fond blanc pour l'ensemble
+.full-home-page {
+  background-color: white;
+  z-index: -1;
+}
+
 // /* PARTIE 1 LOGO */
 .home-first-part{
   width: 100vw;
   display: none;
   height: 100vh;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
+  background-color: white;
   // animation-iteration-count: infinite;
   // animation: fade 6s linear 3s  ;
   display: flex;
@@ -89,12 +96,12 @@
   z-index: 5;
 }
 .zen-mood{
-  bottom: 103vw;
+  bottom: 48vh;
   right: 22vw;
   background-color:#A6CCFF;
 }
 .peps-mood{
-  top: 103vw;
+  top: 48vh;
   background-color: #F2CD13;
   right: 7vw;
 }
