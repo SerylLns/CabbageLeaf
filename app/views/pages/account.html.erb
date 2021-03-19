@@ -1,11 +1,11 @@
 <div class="account-page">
   <div class="account-profil">
     <div class="account-photo">   
-      ICI UNE PHOTO 
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cOyOI9NJ5DnPb12SDg0_UQHaKi%26pid%3DApi&f=1" alt="" srcset="">
     </div>
     <h3 class="account-name"><%= current_user.username %></h3>
     <p>je sais pas</p>
-    <select name="select" id=""></select>
+    <%= render  "pages/select" %>
   </div>
   <% @articles.each do |article| %>
     <div class="account-card">

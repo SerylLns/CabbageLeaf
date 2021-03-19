@@ -1,4 +1,4 @@
-.button-index{
+.buttons-index{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,7 +11,6 @@
   border-radius: 50%;
   background-color: $blue;  
   opacity: .5;
-  
   margin: 0 2vh 6vw 2vh;
 }
 #btn-save{

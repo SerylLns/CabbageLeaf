@@ -8,17 +8,29 @@
   position: absolute;
   z-index: 0;
   width: 100vw;
-  height: 20vh;
-  background-color: $blue;
+  height: 40vh;
+  padding-top: 5vh;
+  // background-color: $blue;
+  background: rgba($blue, 0.61);
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
 }
-
+.account-photo img{
+  width: 20vw;
+  height: 10vh;
+  border-radius: 50%;
+  border: 3px solid $blue;
+  margin-bottom: 1vh;
+}
 .account-card{
   z-index: 3;
   opacity: .9;
   width: 80vw;
   height: 60vh;
   margin: 0 auto 0 auto;
-  padding-top: 15vh;
+  padding-top: 45vh;
 }
 .img-card-top{
   border-top-left-radius: 8px;
