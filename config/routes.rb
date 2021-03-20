@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     get "like", to: "interactions#like", as: "interactions_like"
   end
 
-get "account", to: "pages#account"
+  get "account", to: "pages#account"
 
 end

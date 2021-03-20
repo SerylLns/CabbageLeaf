@@ -14,7 +14,14 @@
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
       <p>SDF</p>
-    <select name="" id="">Futur selecteur</select>
+
+      <select placeholder="Trier par Tag" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Trier par Tag</option>
+        <% Article::CATEGORIES.each do |cat| %>
+          <option><%= cat %></option>
+        <% end %>
+      </select>
+      
     </div>
   <% @articles.each do |article| %>
     <div class="account-card">
