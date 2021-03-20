@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   end
 
   def account
-    @articles = current_user.articles
+    @articles = current_user.articles.order(interactions: :desc)
   end
 end

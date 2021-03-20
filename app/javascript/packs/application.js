@@ -23,6 +23,7 @@ import "bootstrap";
 import { animHome } from '../plugins/anim-home'
 import { animMenu } from '../plugins/anim-menu'
 import { animCard } from '../plugins/animate-indexcard'
+import { animRank } from '../plugins/anim-rank'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -30,6 +31,7 @@ document.addEventListener('turbolinks:load', () => {
   animMenu();
   animHome();
   animCard();
+  animRank();
   // Swal.fire({
   //   title: 'Error!',
   //   text: 'Do you want to continue',

@@ -5,6 +5,7 @@
     <p class="rank-head-text">Vous retrouverez ici les classements de vos articles préfères, ceux qui ont reçu le plus d’applaudisement, ceux qui ont été les plus sauvegardés.</p>
   </div>
 
+  <%# ARTICLE APPLAUSE %>
   <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/CHOU_VIOLET-11_a7zl7b", class: "rank-chou1") %>
   <div class="card-applause">
     <div class="applause-head">
@@ -24,6 +25,7 @@
     <%# <img src="<%= article.photo.url %>
   <%# end %>
 
+  <%# ARTICLE SAVE %>
   <div class="card-applause">
     <div class="applause-head">
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9", class: "applause-img") %>
@@ -32,7 +34,11 @@
     </div>
       <div class="card-rank">
         <% @articles_saved.each do |article| %>
-          <img src="<%= article.photo.url %>">
+          <% if article == @articles_saved.first %>
+            <img class="firsst" src="<%= article.photo.url %>">
+          <% else %>
+            <img src="<%= article.photo.url %>">
+          <% end %>
         <% end %>
       </div>
   </div>
