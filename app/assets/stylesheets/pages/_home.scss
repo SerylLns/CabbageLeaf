@@ -43,6 +43,7 @@
   align-items: center;
   border: 6px solid black;
   .home-title{
+    color: black;
     text-align: center;
     font-size: 30px;
   }
@@ -101,7 +102,6 @@
   background-color:#A6CCFF;
 }
 .peps-mood{
-  width: 10vh;
   top: 48vh;
   background-color: #F2CD13;
   right: 5vh;
@@ -121,7 +121,6 @@
 
 // LAST PART
 .last-part{
-
   width: 90vw;
   height: 90vh;
   margin: 5vh auto;
