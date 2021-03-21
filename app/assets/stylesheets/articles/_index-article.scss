@@ -32,7 +32,7 @@
   width: 97%;
   margin: 2vh auto;
   line-height: 18px;
-  color: $blue;
+  color: var(--blue);
   a {
     color: $dark-blue;
     font-weight: bold;
@@ -41,7 +41,7 @@
 .divider{
   width: 8vw;
   height: 3px;
-  background-color: $light-lavander;
+  background-color: var(--light-lavander);
   content: "";
   margin: 1vh auto;
   border-radius: 25%;
@@ -53,7 +53,7 @@
   justify-content: space-around;
 }
 .index-tag{
-  background-color: $blue;
+  background-color: var(--lightblue);
   color: $dark-blue;
   border-radius: 3px;
   font-weight: 200;
