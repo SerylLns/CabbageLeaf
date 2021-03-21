@@ -43,6 +43,7 @@
   align-items: center;
   border: 6px solid black;
   .home-title{
+    color: black;
     text-align: center;
     font-size: 30px;
   }
@@ -89,7 +90,7 @@
 // BUTTON(ARROW) ZEN PEPS
 .peps-mood, .zen-mood{
   position: absolute;
-  width: 10vh;
+  width: 12vw;
   height: 8vh;
   border-radius: 50%;
   background-color: white;
@@ -97,14 +98,13 @@
 }
 .zen-mood{
   bottom: 48vh;
-  right:14vh;
+  right:15vw;
   background-color:#A6CCFF;
 }
 .peps-mood{
-  width: 10vh;
   top: 48vh;
   background-color: #F2CD13;
-  right: 5vh;
+  right: 5vw;
 }
 .btn-mood{
   opacity: 0;
@@ -121,7 +121,6 @@
 
 // LAST PART
 .last-part{
-
   width: 90vw;
   height: 90vh;
   margin: 5vh auto;

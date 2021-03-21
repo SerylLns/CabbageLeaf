@@ -13,6 +13,7 @@ const animMenu = () => {
     });
 
     hamburger.addEventListener("click", ()=>{
+      menu.removeAttribute("hidden");
       hamburger.classList.toggle("open");
       if(hamburger.classList.contains("open")){
         if (hamburger.classList.contains("reverse")) {
