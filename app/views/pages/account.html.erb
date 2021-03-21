@@ -1,17 +1,33 @@
+  <div class="account-head">
+    <%# <%= render  "pages/select" %>
+  </div>
 <div class="account-page">
-  <div class="account-profil">
     <div class="account-photo">   
       <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cOyOI9NJ5DnPb12SDg0_UQHaKi%26pid%3DApi&f=1" alt="" srcset="">
     </div>
-    <h3 class="account-name"><%= current_user.username %></h3>
-    <p>je sais pas</p>
-    <%= render  "pages/select" %>
-  </div>
+    <div class="leaf-left">
+      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-09_u7ezti") %>
+    </div>
+    <div class="leaf-right">
+      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-07_uizvag") %>      
+    </div>
+    <div class="account-info">
+      <h3 class="account-name"><%= current_user.username %></h3>
+      <p>SDF</p>
+
+      <select placeholder="Trier par Tag" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Trier par Tag</option>
+        <% Article::CATEGORIES.each do |cat| %>
+          <option><%= cat %></option>
+        <% end %>
+      </select>
+      
+    </div>
   <% @articles.each do |article| %>
     <div class="account-card">
       <img src="<%=article.photo.url%>" alt="" class="img-card-top">
       <%= link_to article_path(article) do  %>
-        <h4 class="account-card-title"><%= article.title %></h4>
+        <h4 class="title"><%= article.title %></h4>
       <% end %>
       <div class="divider"></div>
       <div class="index-tags">

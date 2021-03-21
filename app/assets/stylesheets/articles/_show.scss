@@ -7,12 +7,17 @@
 
 .picture-up {
   background-attachment: scroll;
-  height: 200px;
+  height: 40vh;
+  width: 100vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 
+}
+.article-img{
+  height: 40vh;
+  width: 100vw;
 }
 
 .fleche-back {
@@ -28,12 +33,13 @@
 .card-white {
   background-color: white;
   border-radius: 6px;
-  margin: 20px;
+  width: 90vw;
   padding: 15px;
   box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
-  top: 27vh;
-  margin-bottom: 50px;
-  position: absolute;
+  margin: 0 auto;
+  margin-left: 5vw;
+  position: relative;
+    top: -10vh;
 }
 
 .title {
@@ -50,9 +56,20 @@
   color: #949494;
 }
 
-.time-read, {
-  color: #C4C4C4;
+.conteuhnaire {
+  display: flex;
+  justify-content: center
 }
+
+#chou {
+  justify-content: center;
+  height: 7vh;
+  width: 7vh;
+}
+
+// .time-read {
+//   color: #C4C4C4;
+// }
 
 .time-read,
 .date-creation {
@@ -60,6 +77,30 @@
   font-size: 12px;
   font-family: "Hurmegeo-light";
 }
+
+.tag {
+  background-color: $ciel;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  font-weight: 200;
+  font-size: 7px;
+  width: 100%;
+  z-index: 1;
+}
+
+.texte-tag {
+  color:$dark-blue;
+  text-align: center;
+  font-family:"Hurmegeo";
+  padding-right: 20px;
+  padding-left: 20px;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+
 
 .text {
   text-align: left;

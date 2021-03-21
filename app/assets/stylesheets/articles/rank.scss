@@ -1,0 +1,81 @@
+.rank-fullpage{
+  flex-direction: column;
+  display: flex;
+  align-items: center;  
+}
+.rank-fullpage{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(169,166,255,1) 44%, rgba(166,204,255,1) 100%);
+  width: 100vw;
+  height: 300vh;
+}
+
+.head-rank{
+  margin-top: 7vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.rank-img{
+  width: 20vw;
+}
+.rank-title{
+  margin-top: 1vh;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+.rank-head-text{
+  color: $dark-blue;
+  font-weight: 600;
+  width: 80vw;
+}
+.card-applause{
+  z-index: 3;
+  position: relative;
+  border-radius: 5px;
+  width: 90vw;
+  background-color: #fff;
+  height: 30vh;
+  margin-bottom: 5vh;
+}
+.applause-head{
+  display: flex;
+  flex-direction: row;
+  .applause-img{
+    width: 20vw;
+  }
+  h4{
+    margin-top: 4vh;
+    text-transform: uppercase;
+    color: $dark-blue;
+    width: 70%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+// .card-rank{
+//   margin-top: 4vh;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   img{
+//     width: 20%;
+//   }
+//   img:hover{
+//     transform: scale(1.6);
+//   }
+// }
+.rank-chou1{
+  z-index: 1;
+  transform: rotateZ(-1deg);
+  width: 36vw;
+  position: fixed;
+  right: -10vw;
+  top: 26vh;
+}

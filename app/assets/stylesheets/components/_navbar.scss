@@ -1,4 +1,5 @@
 // HAMBURGER
+@import "toggle-btn";
 
 .barres{
   cursor: pointer;
@@ -8,7 +9,7 @@
   font-family: $body-font;
   right: 5vw;
   top: 1.5vh;
-  z-index: 5;
+  z-index: 145;
   // margin-top: 50px;
 }
 
@@ -72,7 +73,7 @@
   background-color: $very-light-lavander;
   right: 0vw;
   position: absolute;
-  z-index: 10;
+  z-index: 45;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: row;

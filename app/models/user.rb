@@ -7,4 +7,15 @@ class User < ApplicationRecord
   has_many :articles, through: :interactions
   validates :username, presence: true
   validates :username, uniqueness: true
+
+
+  def find_interaction(article)
+    self.interactions.each do |int|
+      if  int.article == article       
+        return int
+      end
+    end
+    return false
+  end
+
 end

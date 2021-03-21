@@ -1,0 +1,14 @@
+<div class="card-rank">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="carousel-cards">
+    <%= index = 1 %>
+    <% articles.each do |article| %>
+      <label class="carousel-card" for="item-<%=index%>" id="song-<%=index%>">
+        <img src="<%= article.photo.url%> " alt="winners">
+      </label>
+      <% index += 1 %>  
+    <% end %>
+  </div>
+</div>

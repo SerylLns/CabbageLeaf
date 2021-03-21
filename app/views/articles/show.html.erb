@@ -2,11 +2,11 @@
   <!-- image top + fleche back -->
   <div class="picture-up">
     <div>
-      <%= link_to :back do %>
+      <%= link_to articles_path do %>
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
       <% end %>
     </div>
-    <%= cl_image_tag @article.photo.key, height: 300, crop: :fill %>
+    <%= cl_image_tag @article.photo.key, class:"article-img" ,height: 300, crop: :fill %>
   </div>
   <!-- card blanche -->
   <div class="card-white">
@@ -22,19 +22,25 @@
       <p> <%= @article.content %></p>
     </div>
     <!-- boutons de bas de page -->
-    <div>
+    <div class="conteuhnaire">
       <div class="btn-index" id="claps">
-        <%= link_to article_interactions_path(@article), method: "post" do %>
-        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-22_pvbo9y") %>
+        <%= link_to article_interactions_like_path(@article) do %>
+        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
         <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         <% end %>
       </div>
-      <div class="btn-index" id="chou">
-        <%= link_to article_interactions_path(@article), method: "post" do %>
-        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
+      <div class="btn-index">
+        <%= link_to article_interactions_path(@article), method: "post"  do %>
+        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9", id: "chou") %>
         <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         <% end %>
       </div>
     </div>
+     <!-- tags de bas de page -->
+     <div class="tag">
+            <% @article.category.split(",").each do |cat| %>
+            <p class="texte-tag">#<%= cat %></p> |
+            <% end %>
+     </div>
   </div>
 </div>

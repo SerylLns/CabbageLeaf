@@ -23,6 +23,7 @@ const animMenu = () => {
         }
         openMenuTimeline.play();
       } else if ( !hamburger.classList.contains("open")) {
+       
         openMenuTimeline.reverse();
         openMenuTimeline.play();
         hamburger.classList.add("reverse")
