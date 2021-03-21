@@ -13,7 +13,7 @@ const animMenu = () => {
     });
 
     hamburger.addEventListener("click", ()=>{
-      menu.removeAttribute("hidden");
+      // menu.removeAttribute("hidden");
       hamburger.classList.toggle("open");
       if(hamburger.classList.contains("open")){
         if (hamburger.classList.contains("reverse")) {
@@ -30,10 +30,10 @@ const animMenu = () => {
       }
       if (hamburger.classList.contains("reverse")) {
         setTimeout(() => {
-          menu.hidden = true;
-        }, 1000);
+          // menu.hidden = true;
+        }, 800);
       } else {
-        menu.removeAttribute("hidden");
+        // menu.removeAttribute("hidden");
       }
     });
   }
