@@ -1,6 +1,6 @@
 .index-page{
   height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
   font-family: $body-font;
   overflow: hidden;
   // display: flex;
@@ -10,14 +10,16 @@
   background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
   justify-content: space-between;
 }
+
 .my-card{
   background: white;
   margin: 2vh 5vh;
   width: 90vw;
-  z-index: 10;
+  z-index: 9;
   height: 85vh;
   border-radius: 5px;
 }
+
 .image-card img{
   width: 100%;
   border-radius: 5px 5px 0px 0px;
@@ -28,6 +30,7 @@
   text-align: center;
   margin: 15px auto;
 }
+
 .index-text{
   width: 97%;
   margin: 5px auto;
@@ -38,6 +41,7 @@
     font-weight: bold;
   }
 }
+
 .divider{
   width: 8vw;
   height: 3px;
@@ -45,13 +49,14 @@
   content: "";
   margin: 10px auto;
   border-radius: 25%;
-
 }
+
 .index-tags{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .index-tag{
   background-color: $blue;
   color: $dark-blue;
@@ -62,10 +67,12 @@
   text-transform: uppercase;
   letter-spacing: 0.37em;
 }
+
 .chouquette{
   position: absolute;
-  bottom: -10vh;
-  left: -15vw;
-  width: 78vw;
+  width: 50vw;
+  height: 20vh;
+  bottom: 0vh;
+  left: 0vw;
   z-index: 3;
 }
