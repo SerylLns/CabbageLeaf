@@ -7,4 +7,8 @@ class Article < ApplicationRecord
   CATEGORIES = ["sport", "femme", "monde", "france", "lgbt+", "droit", "animaux", "afrique",
                 "europe","sante","inovation","environnement","decouverte","business", "ethique", "nature", 
                 "science","amerique", "tourisme"]
+
+  def get_tags
+    return self.category.split(", ")
+  end
 end

@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   end
 
   get "account", to: "pages#account"
+  get "filter", to: "pages#filter"
+
 
 end

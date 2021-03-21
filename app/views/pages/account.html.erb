@@ -15,13 +15,16 @@
       <h3 class="account-name"><%= current_user.username %></h3>
       <p>SDF</p>
 
-      <select placeholder="Trier par Tag" name="subject" id="subject_input" required>
-        <option disabled hidden selected>Trier par Tag</option>
-        <% Article::CATEGORIES.each do |cat| %>
-          <option><%= cat %></option>
-        <% end %>
-      </select>
-      
+      <form action="/filter" method="get">
+        <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
+          <option disabled hidden selected>Trier par Tag</option>
+            <option>Tout(e)s</option>
+            <% Article::CATEGORIES.each do |cat| %>
+              <option><%= cat %></option>
+            <% end %>
+        </select>
+        <button type="submit"></button>
+      </form>
     </div>
   <% @articles.each do |article| %>
     <div class="account-card">
