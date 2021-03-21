@@ -132,4 +132,9 @@
   margin-right: 2vw;
   color: $light-lavander;
 }
-
+.switch{
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-color: var(--lavander);
+}
