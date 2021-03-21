@@ -9,7 +9,11 @@ class PagesController < ApplicationController
   end
   def filter
     categorie = params[:categorie]
-    @articles = current_user.articles.select {|article| article.get_tags.include?(categorie)}
+    if categorie == "Tout(e)s" 
+      @articles = current_user.articles
+    else
+      @articles = current_user.articles.select {|article| article.get_tags.include?(categorie)}
+    end
     render :account
   end
 end
