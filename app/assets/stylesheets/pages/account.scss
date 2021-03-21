@@ -49,6 +49,7 @@
 }
 .account-info{
   margin-bottom: 4vh;
+  z-index: 1;
 }
 .leaf-right{
   z-index: 3;
@@ -69,4 +70,10 @@
 .leaf-left img{
   transform: rotateZ(282deg);
   width: 25vw;
+}
+
+#subject_input{
+  width: 30vw;
+  background-color: $blue;
+  font-size: 15px;
 }
