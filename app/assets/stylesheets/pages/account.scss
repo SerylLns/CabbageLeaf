@@ -17,13 +17,28 @@
   // justify-content: center;
   align-items: center;
 }
+
 .account-photo img{
-  width: 20vw;
-  height: 10vh;
+  width: 30vw;
+  height: 15vh;
   border-radius: 50%;
   border: 3px solid $blue;
   margin-bottom: 1vh;
 }
+
+.account-name {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 10vw;
+  text-transform: uppercase;
+  color: #021E73;
+}
+
+p {
+  color: #021E73;
+  font-family: Roboto;
+}
+
 .account-card{
   z-index: 3;
   opacity: .9;
@@ -32,12 +47,14 @@
   margin: 0 auto 0 auto;
   padding-top: 45vh;
 }
+
 .img-card-top{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   height: 50%;
   width: 100%;
 }
+
 .account-card-title{
   text-align: center;
   margin-top: 3vh;
