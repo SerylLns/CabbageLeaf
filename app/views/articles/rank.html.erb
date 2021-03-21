@@ -32,15 +32,7 @@
       <h4>Vous avez été beaucoup a les sauvegarder sur votre profil… </h4>
       <div class="divider-rank"></div>
     </div>
-      <div class="card-rank">
-        <% @articles_saved.each do |article| %>
-          <% if article == @articles_saved.first %>
-            <img class="firsst" src="<%= article.photo.url %>">
-          <% else %>
-            <img src="<%= article.photo.url %>">
-          <% end %>
-        <% end %>
-      </div>
+      <%= render "shared/carousel", articles: @articles_saved %>
   </div>
 
 </div>

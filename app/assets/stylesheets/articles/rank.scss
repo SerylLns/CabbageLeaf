@@ -7,7 +7,7 @@
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(169,166,255,1) 44%, rgba(166,204,255,1) 100%);
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
 }
 
 .head-rank{
@@ -59,18 +59,18 @@
     font-size: 16px;
   }
 }
-.card-rank{
-  margin-top: 4vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  img{
-    width: 20%;
-  }
-  img:hover{
-    transform: scale(1.6);
-  }
-}
+// .card-rank{
+//   margin-top: 4vh;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   img{
+//     width: 20%;
+//   }
+//   img:hover{
+//     transform: scale(1.6);
+//   }
+// }
 .rank-chou1{
   z-index: 1;
   transform: rotateZ(-1deg);
