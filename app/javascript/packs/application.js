@@ -32,5 +32,5 @@ document.addEventListener('turbolinks:load', () => {
   animCard();
   toggleColor();
   // animRank();
-  // document.documentElement.style.setProperty("--light-blue","#4CAF50");
+  // document.documentElement.style.setProperty("--lightblue","#4CAF50");
 });

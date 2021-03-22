@@ -7,8 +7,10 @@
   flex-direction: row;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, rgba(166,204,255,1) 0%, rgba(169,166,255,1) 100%);
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(169,166,255,1) 44%, rgba(166,204,255,1) 100%);
   justify-content: space-between;
+  padding-top: 6vh;
 }
 
 .my-card{
@@ -16,7 +18,7 @@
   margin: 2vh 5vh;
   width: 90vh;
   z-index: 2;
-  height: 88vh;
+  // height: 88vh;
   border-radius: 5px;
 }
 
@@ -32,13 +34,21 @@
 }
 
 .index-text{
-  width: 97%;
-  margin: 2vh auto;
-  line-height: 18px;
+  // width: 97%;
+  // margin: 2vh auto;
+  // line-height: 18px;
   color: var(--blue);
+  text-align: center;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: "Hurmegeo";
   a {
-    color: $dark-blue;
-    font-weight: bold;
+    color: $light-lavander;
+    letter-spacing: 0.2rem;
+    font-size: 12px;
+    font-family: "Hurmegeo-bold";
+    padding-bottom: 20px;
   }
 }
 
@@ -55,6 +65,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: "Hurmegeo";
 }
 
 .index-tag{
@@ -62,10 +73,13 @@
   color: $dark-blue;
   border-radius: 3px;
   font-weight: 200;
-  font-size: 7px;
-  padding: 4px 5px;
+  font-size: 8px;
+  padding: 4px 8px 2px 8px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
+  margin-top: 10px;
+  font-family: "Hurmegeo";
+
 }
 
 .chouquette{
@@ -76,4 +90,16 @@
   left: 0vw;
 
   z-index: 0;
+}
+
+.titleIndex {
+  color: $dark-blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Hurmegeo-bold";
+  line-height: normal;
+  margin-bottom: 10px;
 }

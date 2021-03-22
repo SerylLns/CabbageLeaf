@@ -5,8 +5,8 @@ class Article < ApplicationRecord
   validates :content, presence: true
   validates :category, presence: true
   CATEGORIES = ["sport", "femme", "monde", "france", "lgbt+", "droit", "animaux", "afrique",
-                "europe","sante","inovation","environnement","decouverte","business", "ethique", "nature", 
-                "science","amerique", "tourisme"]
+                "europe","santé","inovation","écologie","découverte","business", "éthique", "nature",
+                "science","amérique", "tourisme"]
 
   def get_tags
     return self.category.split(", ")
