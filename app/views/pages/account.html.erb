@@ -15,7 +15,7 @@
     </div>
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
-      <p>SDF</p>
+      <p>Fan de choux de Bruxelles</p>
 
       <form action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
@@ -25,7 +25,10 @@
               <option><%= cat %></option>
             <% end %>
         </select>
-        <button type="submit"></button>
+        <div class="select-tag">
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6", class: "button-leaf") %>
+        <button type="submit" id="button-tag"></button>
+        </div>
       </form>
     </div>
   <% @articles.each do |article| %>
