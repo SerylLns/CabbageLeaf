@@ -45,10 +45,14 @@
   .home-title{
     color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
+    font-family:'Hurmegeo-bold';
   }
   .home-text{
-    font-size: 17px;
+    font-size: 15px;
+    letter-spacing: normal;
+    font-family:'Hurmegeo';
+    color: black;
   }
   .home-logo{
     position: absolute;
@@ -59,7 +63,7 @@
 }
 
 .home-divider{
-  width: 15vw;
+  width: 10vw;
   height: 3px;
   background-color: black;
 }
@@ -90,21 +94,21 @@
 // BUTTON(ARROW) ZEN PEPS
 .peps-mood, .zen-mood{
   position: absolute;
-  width: 12vw;
+  width: 15vw;
   height: 8vh;
   border-radius: 50%;
   background-color: white;
   z-index: 5;
 }
 .zen-mood{
-  bottom: 48vh;
-  right:15vw;
-  background-color:#A6CCFF;
+  bottom: 45vh;
+  right: 17vw;
+  background-color: #A6CCFF;
 }
 .peps-mood{
-  top: 48vh;
+  top: 45vh;
+  right: 2vw;
   background-color: #F2CD13;
-  right: 5vw;
 }
 .btn-mood{
   opacity: 0;
@@ -138,5 +142,30 @@
 .last-part p{
   text-align: center;
   width: 85%;
+  font-family:'Hurmegeo';
   color: black;
+}
+
+.fleche-up, .fleche-down {
+
+  position: absolute;
+
+}
+
+.fleche-up {
+  width: 12vw;
+  height: 7vh;
+  top: -0.5vh;
+  right: 1.5vw;
+}
+
+.fleche-down {
+  width: 12vw;
+  height: 6vh;
+  top: 2.5vh;
+  right: 1.6vw;
+}
+
+h4 {
+   font-family:'Hurmegeo';
 }
