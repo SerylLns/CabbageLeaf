@@ -24,16 +24,16 @@
   z-index: 2;
 }
 
-.account-photo-wrap {
-  filter: drop-shadow(0 0 1vh #021E73);
-  z-index: 2;
-}
+// .account-photo-wrap {
+//   filter: drop-shadow(0 0 1vh #021E73);
+//   z-index: 2;
+// }
 
 .account-photo img{
   width: 36vw;
-  height: 18vh;
+  height: 20vh;
   clip-path: circle();
-  border: 3px solid $blue;
+  // border: 3px solid $blue;
   margin-bottom: 1vh;
   z-index: 2;
 }
@@ -46,18 +46,33 @@
     font-family: 'Hurmegeo-light';
     display: flex;
     justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
-.account-name {
+.account-name{
   font-family: 'Hurmegeo-bold';
-  font-weight: bold;
-  font-size: 10vw;
+  font-size: 30px;
   text-transform: uppercase;
   color: #021E73;
   display: flex;
   justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+
 }
+
+// .account-name {
+//   font-family: 'Hurmegeo';
+//   color: #021E73;
+//   display: flex;
+//   justify-content: center;
+//   padding: 20px 10px;
+//   text-align: center;
+// }
 
 .leaf-right{
   z-index: 3;

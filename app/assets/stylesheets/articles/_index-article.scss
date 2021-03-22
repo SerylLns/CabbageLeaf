@@ -18,13 +18,25 @@
   margin: 2vh 5vh;
   width: 90vh;
   z-index: 2;
-  // height: 88vh;
   border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
 }
 
 .image-card img{
   width: 100%;
   border-radius: 5px 5px 0px 0px;
+}
+.titleIndex {
+  color: $dark-blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Hurmegeo-bold";
+  line-height: normal;
+  margin-bottom: 10px;
+  padding:10px 10px;
 }
 
 .index-content{
@@ -34,21 +46,20 @@
 }
 
 .index-text{
-  // width: 97%;
-  // margin: 2vh auto;
-  // line-height: 18px;
   color: var(--blue);
-  text-align: center;
+  // text-align: center;
   color: $dark-blue;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: 1.2em;
   font-family: "Hurmegeo";
   a {
     color: $light-lavander;
+    line-height: 1.4em;
     letter-spacing: 0.2rem;
     font-size: 12px;
     font-family: "Hurmegeo-bold";
-    padding-bottom: 20px;
+    padding:15px 20px;
+    text-align: center;
   }
 }
 
@@ -61,44 +72,38 @@
   border-radius: 25%;
 }
 
+// TAGS
 .index-tags{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  // flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   font-family: "Hurmegeo";
+  font-size: 7px;
+  width: 100%;
+  z-index: 1;
 }
 
 .index-tag {
   background-color: var(--light-blue);
   color: $dark-blue;
   border-radius: 3px;
-  font-weight: 200;
+  // font-weight: 200;
   font-size: 8px;
-  padding: 4px 8px 2px 8px;
+  padding: 4px 8px 4px 8px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
-  margin-top: 10px;
+  margin-top: 5px;
   font-family: "Hurmegeo";
 }
 
+// Feuille de chou
 .chouquette{
   position: absolute;
   width: 50vw;
   height: 20vh;
   bottom: 0vh;
   left: 0vw;
-
   z-index: 0;
-}
-
-.titleIndex {
-  color: $dark-blue;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: "Hurmegeo-bold";
-  line-height: normal;
-  margin-bottom: 10px;
 }

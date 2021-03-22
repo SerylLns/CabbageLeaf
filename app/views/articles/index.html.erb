@@ -9,11 +9,15 @@
       <div class= "titleIndex"> <%= article.title %></div>
       <% end %>
       <div class="divider"></div>
+
+      <!-- TAGS -->
       <div class="index-tags">
         <% article.category.split(",").each do |cat| %>
-        <p class="index-tag">#<%= cat %></p>
+          <p class="index-tag">#<%=cat%></p>
         <% end %>
       </div>
+
+      <!-- Text -->
       <div class="index-text">
         <p> <%= article.content[0..150] %>...
           <a  href="articles/<%=article.id%>"><br>LIRE LA SUITE ?</a>
