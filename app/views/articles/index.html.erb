@@ -27,12 +27,15 @@
           <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-09_ipu2g2",  id:"delete-btn", class: "btn-index") %>
           <%# BTN SAVE %>
 
-            <% if user_signed_in? && !current_user.find_interaction(article)  %> <%# SI article deja save => affiche pas le boutton%>
+            <div class="buttonChou">
               <%= link_to  article_interactions_path(article), method: "post" do %>
-                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9",  class: "btn-index", id: "btn-save") %>
-                <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+                <div id = "btn-save">
+                  <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
+                  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+                </div>
+                <div class = "btn-index"></div>
               <% end %>
-            <% end %>
+            </div>
           <%# BTN Valider %>
           <%= link_to article_path(article) do  %>
             <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-11_sro6wu", class: "btn-index")%>
