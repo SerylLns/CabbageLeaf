@@ -23,12 +23,17 @@ import "bootstrap";
 import { animHome } from '../plugins/anim-home'
 import { animMenu } from '../plugins/anim-menu'
 import { animCard } from '../plugins/animate-indexcard'
-// import { animRank } from '../plugins/anim-rank'
+import { carousel } from '../plugins/carousel'
+
+// import { toggleColor } from '../plugins/color-mood'
 
 document.addEventListener('turbolinks:load', () => {
   animMenu();
   animHome();
   animCard();
+  // toggleColor();
+  carousel();
+
   // animRank();
-  document.documentElement.style.setProperty("--lightblue","#4CAF50");
+  // document.documentElement.style.setProperty("--lightblue","#4CAF50");
 });

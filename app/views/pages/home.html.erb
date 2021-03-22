@@ -7,15 +7,19 @@
 
   <div  class="full-page">
     <div class="color-top">
-      <h4 hidden class="mood">PEP'S</h4>
+      <h4 hidden class="mood title-mood-peps">PEP'S</h4>
     </div>
     <div class="color-bottom">
-      <h4 hidden class="mood">ZEN</h4>
+      <h4 hidden class="mood title-mood-zen">ZEN</h4>
     </div>
     <%= link_to articles_path do %>
       <div class="btn-mood">
-      <%=cl_image_tag("The Cabbage Leaf/LOGO - PICTO/fleche_up_Plan_de_travail_1_qv9xuk", class: "zen-mood") %>
-      <%=cl_image_tag("The Cabbage Leaf/LOGO - PICTO/fleche_down-04_o0gfoy", class: "peps-mood")%>
+        <div class="zen-mood">
+      <%=cl_image_tag("The Cabbage Leaf/LOGO - PICTO/fleche_up_Plan_de_travail_1_qv9xuk", class: "fleche-up") %>
+        </div>
+        <div class="peps-mood">
+      <%=cl_image_tag("The Cabbage Leaf/LOGO - PICTO/fleche_down-04_o0gfoy", class: "fleche-down")%>
+        </div>
       </div>
       <% end %>
     <div  class="home-border">

@@ -1,12 +1,11 @@
 <div class="background">
   <!-- image top + fleche back -->
-  <div class="picture-up">
+  <div class="picture-up" style="background-image: url('<%= cl_image_path @article.photo.key, :height => 300, crop: :fill %>');">
     <div>
       <%= link_to articles_path do %>
-      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
+      <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_hqmgxf", class: "fleche-back")%>
       <% end %>
     </div>
-    <%= cl_image_tag @article.photo.key, class:"article-img" ,height: 300, crop: :fill %>
   </div>
   <!-- card blanche -->
   <div class="card-white">
@@ -21,26 +20,39 @@
     <div class="text">
       <p> <%= @article.content %></p>
     </div>
-    <!-- boutons de bas de page -->
+
+    <!-- Button Applause -->
     <div class="conteuhnaire">
-      <div class="btn-index" id="claps">
+      <div class="buttonChou">
         <%= link_to article_interactions_like_path(@article) do %>
-        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <div id="claps">
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        </div>
+        <div class="btn-index"></div>
         <% end %>
       </div>
-      <div class="btn-index">
+
+      <!-- Button Cabbage leaf - Read later -->
+      <div class="buttonChou">
         <%= link_to article_interactions_path(@article), method: "post"  do %>
-        <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9", id: "chou") %>
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <div id= "chou">
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
+          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        </div>
+        <div class="btn-index"></div>
         <% end %>
       </div>
     </div>
-     <!-- tags de bas de page -->
-     <div class="tag">
-            <% @article.category.split(",").each do |cat| %>
-            <p class="texte-tag">#<%= cat %></p> |
-            <% end %>
-     </div>
+
+    <!-- tags de bas de page -->
+    <div class="tag">
+      <% @article.category.split(",").each do |cat| %>
+      <p class="texte-tag">#<%= cat %></p>
+        <% unless @article.category.split(",").index(cat) == (@article.category.split(",").count - 1) %>
+        <p class="pipe">|</p>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

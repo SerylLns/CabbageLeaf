@@ -1,12 +1,11 @@
 
 const animCard = () => {
   const buttonSupp = document.querySelectorAll("#delete-btn");
-  const cards = document.querySelectorAll(".index-card")
+  // const cards = document.querySelectorAll(".my-card")
   if (buttonSupp) {
     buttonSupp.forEach(button => {
       button.addEventListener("click", (e)=>{
-        // console.log();
-        const card = e.currentTarget.parentNode.parentNode 
+        const card = e.currentTarget.parentNode.parentNode.parentNode 
         setTimeout(() => {
           card.hidden = true;
         }, 700);
