@@ -21,11 +21,10 @@
 }
 
 .fleche-back {
-  background-image: url("../../arrow-back.png");
-  height: 4vh;
-  width: 7vh;
+  height: 5vh;
+  width: 8vh;
   left: 10px;
-  top: 30px;
+  top: 22px;
   position: absolute;
   z-index: 1000;
 }
@@ -67,9 +66,11 @@
   width: 7vh;
 }
 
-// .time-read {
-//   color: #C4C4C4;
-// }
+.time-read p {
+  color: #C4C4C4;
+  font-family: "Hurmegeo-light";
+  margin-top: -2px;
+}
 
 .time-read,
 .date-creation {
@@ -99,7 +100,6 @@
   z-index: 1000;
   margin-bottom: 0;
 }
-
 
 
 .text {
