@@ -4,9 +4,9 @@ class Article < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
   validates :category, presence: true
-  CATEGORIES = ["sport", "femme", "monde", "france", "lgbt+", "droit", "animaux", "afrique",
-                "europe","sante","inovation","environnement","decouverte","business", "ethique", "nature", 
-                "science","amerique", "tourisme"]
+  CATEGORIES = ["port", "Femme", "Monde", "France", "LGBT+", "Droit", "Animaux", "Afrique",
+                "Europe","Sante","Inovation","Environnement","Decouverte","Business", "Ethique", "Nature", 
+                "Science","Amerique", "Tourisme"]
 
   def get_tags
     return self.category.split(", ").sort

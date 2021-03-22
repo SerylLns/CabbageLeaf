@@ -12,7 +12,7 @@
   position: absolute;
   z-index: 0;
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   padding-top: 5vh;
   background: rgba($blue, 0.61);
   display: flex;
@@ -38,6 +38,17 @@
   z-index: 2;
 }
 
+.account-info{
+  margin-bottom: 4vh;
+  z-index: 1;
+  p {
+    color: #021E73;
+    font-family: 'Hurmegeo-light';
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .account-name {
   font-family: 'Hurmegeo-bold';
   font-weight: bold;
@@ -48,36 +59,6 @@
   justify-content: center;
 }
 
-p {
-  color: #021E73;
-  font-family: 'Hurmegeo-light';
-  display: flex;
-  justify-content: center;
-}
-
-.account-card{
-  z-index: 2;
-  opacity: .9;
-  width: 80vw;
-  height: 45vh;
-  margin-bottom: 10vh;
-}
-
-.img-card-top{
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 55%;
-  width: 100%;
-}
-
-.account-card-title{
-  text-align: center;
-  margin-top: 3vh;
-}
-.account-info{
-  margin-bottom: 4vh;
-  z-index: 1;
-}
 .leaf-right{
   z-index: 3;
   left: 56vw;
@@ -113,6 +94,7 @@ form {
   font-size: 15px;
   border-radius: 1vh;
   text-align-last: center;
+  font-family: 'Hurmegeo';
 }
 
 .select-tag {
@@ -135,3 +117,44 @@ form {
   right: 23vw;
   position: absolute;
 }
+
+.account-card{
+  z-index: 2;
+  opacity: 1;
+  width: 80vw;
+  height: 40vh;
+  margin-bottom: 4vh;
+  box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
+  border-radius: 1vh;
+}
+
+.img-card-top{
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  height: 55%;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.account-card h4{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 3.5vw;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.index-tags {
+  display: inline-flex;
+  margin-top: 2vh;
+  p {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    height: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+

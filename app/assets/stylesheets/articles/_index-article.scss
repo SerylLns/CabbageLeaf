@@ -58,14 +58,20 @@
 }
 
 .index-tag{
-  background-color: var(--lightblue);
+  background-color: #8EBFFF;
   color: $dark-blue;
-  border-radius: 3px;
-  font-weight: 200;
-  font-size: 7px;
+  // text-align: center;
+  border-radius: 0.5vh;
+  font-weight: 2vh;
+  font-size: 2vw;
   padding: 4px 5px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
+  font-family: 'Hurmegeo';
+  display: flex;
+  justify-content: space-between;
+  text-align-last: center;
+  flex-grow: 1;
 }
 
 .chouquette{

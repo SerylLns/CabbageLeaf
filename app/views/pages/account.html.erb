@@ -19,7 +19,7 @@
 
       <form action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
-          <option disabled hidden selected>Trier par Tag</option>
+          <option disabled hidden selected>Trier par tag</option>
             <option>Tout(e)s</option>
             <% Article::CATEGORIES.sort.each do |cat| %>
               <option><%= cat %></option>
