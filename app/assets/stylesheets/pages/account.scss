@@ -25,12 +25,19 @@
 .account-photo{
   z-index: 2;
 }
+
+.account-photo-wrap {
+  filter: drop-shadow(0 0 1vh #021E73);
+  z-index: 2;
+}
+
 .account-photo img{
-  width: 30vw;
-  height: 15vh;
-  border-radius: 50%;
+  width: 36vw;
+  height: 18vh;
+  clip-path: circle();
   border: 3px solid $blue;
   margin-bottom: 1vh;
+  z-index: 2;
 }
 
 .account-name {
@@ -72,22 +79,22 @@ p {
 .leaf-right{
   z-index: 3;
   left: 56vw;
-  top: 12vh;
+  top: 13vh;
   position: absolute;
 }
 .leaf-left{
-  z-index: 1;
-  top: 9.5vh;
-  right: 54vw;
+  top: 9vh;
+  right: 53vw;
   position: absolute;
 }
 .leaf-right img{
-  width: 19vw;
+  width: 25vw;
   transform: rotateZ(19deg);
 }
 .leaf-left img{
   transform: rotateZ(282deg);
-  width: 25vw;
+  width: 35vw;
+  z-index: -1;
 }
 
 #subject_input{
@@ -95,3 +102,93 @@ p {
   background-color: $blue;
   font-size: 15px;
 }
+
+// .account-page{
+//   width: 100vw;
+//   background-color: #fff;
+//   z-index: -1;
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 5vh;
+//   align-items: center;
+// }
+// .account-head{
+//   position: absolute;
+//   z-index: 0;
+//   width: 100vw;
+//   height: 40vh;
+//   padding-top: 5vh;
+//   // background-color: $blue;
+//   background: rgba($blue, 0.61);
+//   display: flex;
+//   flex-direction: column;
+//   // justify-content: center;
+//   align-items: center;
+// }
+// .account-photo{
+//   z-index: 2;
+// }
+// .account-photo img{
+//   width: 30vw;
+//   height: 15vh;
+//   border-radius: 50%;
+//   border: 3px solid $blue;
+//   margin-bottom: 1vh;
+// }
+// .account-name {
+//   font-family: Roboto;
+//   font-weight: bold;
+//   font-size: 10vw;
+//   text-transform: uppercase;
+//   color: #021E73;
+// }
+// p {
+//   color: #021E73;
+//   font-family: Roboto;
+// }
+// .account-card{
+//   z-index: 2;
+//   opacity: .9;
+//   width: 80vw;
+//   height: 45vh;
+//   margin-bottom: 10vh;
+// }
+// .img-card-top{
+//   border-top-left-radius: 8px;
+//   border-top-right-radius: 8px;
+//   height: 55%;
+//   width: 100%;
+// }
+// .account-card-title{
+//   text-align: center;
+//   margin-top: 3vh;
+// }
+// .account-info{
+//   margin-bottom: 4vh;
+//   z-index: 1;
+// }
+// .leaf-right{
+//   z-index: 3;
+//   left: 56vw;
+//   top: 12vh;
+//   position: absolute;
+// }
+// .leaf-left{
+//   z-index: 1;
+//   top: 9.5vh;
+//   right: 54vw;
+//   position: absolute;
+// }
+// .leaf-right img{
+//   width: 19vw;
+//   transform: rotateZ(19deg);
+// }
+// .leaf-left img{
+//   transform: rotateZ(282deg);
+//   width: 25vw;
+// }
+// #subject_input{
+//   width: 30vw;
+//   background-color: $blue;
+//   font-size: 15px;
+// }
