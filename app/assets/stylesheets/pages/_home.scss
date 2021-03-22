@@ -47,6 +47,8 @@
     text-align: center;
     font-size: 28px;
     font-family:'Hurmegeo-bold';
+    line-height: 35px;
+    letter-spacing: normal;
   }
   .home-text{
     font-size: 15px;
@@ -66,6 +68,7 @@
   width: 10vw;
   height: 3px;
   background-color: black;
+  border-radius: 30%;
 }
 // COLOR BACKGROUND
 .color-top{
@@ -147,9 +150,7 @@
 }
 
 .fleche-up, .fleche-down {
-
   position: absolute;
-
 }
 
 .fleche-up {
@@ -166,6 +167,20 @@
   right: 1.6vw;
 }
 
-h4 {
-   font-family:'Hurmegeo';
+.title-mood-zen {
+  line-height: 23px;
+  letter-spacing: 0.7em;
+  font-family:'Hurmegeo-light';
+
+}
+
+.title-mood-peps {
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  font-family:'Hurmegeo-bold';
+}
+
+.home-border > p {
+  font-family:'Hurmegeo-light';
+  color: black;
 }
