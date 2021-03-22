@@ -1,14 +1,15 @@
 .carousel {
   height: 25vh;
   margin: 0px;
+ 
 }
 .carousel-inner {
   overflow: visible;
 }
 .carousel ul {
-  -webkit-transform: translateY(36%);
-  -ms-transform: translateY(36%);
-  transform: translateY(36%);
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
   padding-left: 7px;
 }
 .carousel li {
