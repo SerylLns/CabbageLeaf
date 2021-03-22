@@ -6,9 +6,10 @@ const animHome = () => {
   const mood = document.querySelector(".color-top .mood");
   const mood2 = document.querySelector(".color-bottom .mood");
   const buttonMood = document.querySelector(".btn-mood");
+  const lastPageHome = document.querySelector('.last-part');
   if (homeFirstPart) {
     const logoTimeline = anime.timeline({
-      autoplay: true
+      autoplay: false
     });
     const homeTimeline = anime.timeline({
       autoplay: false
@@ -16,7 +17,9 @@ const animHome = () => {
     const lastPartTimeline = anime.timeline({
       autoplay: false
     });
-
+    lastPageHome.addEventListener('click', (e) => {
+      logoTimeline.play();
+    });
     lastPartTimeline.add({
       targets:".color-bottom ",
       bottom: 0,
@@ -98,7 +101,7 @@ const animHome = () => {
             complete: function (homeTimeline) {
               const borderHome = document.querySelector('.home-border');
               borderHome.hidden = true;
-              const lastPageHome = document.querySelector('.last-part');
+              
               lastPageHome.hidden = true
             }
           })
