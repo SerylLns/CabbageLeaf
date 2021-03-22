@@ -1,6 +1,6 @@
 <div class="background">
   <!-- image top + fleche back -->
-  <div class="picture-up" style="background-image: url('<%= cl_image_path @article.photo.key, height: 300 %>');">
+  <div class="picture-up" style="background-image: url('<%= cl_image_path @article.photo.key, :height => 300, crop: :fill %>');">
     <div>
       <%= link_to articles_path do %>
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-02_l9qj3t", class: "fleche-back")%>
