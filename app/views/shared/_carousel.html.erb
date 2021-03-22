@@ -5,7 +5,7 @@
     <% articles.each do |item| %>
       <% if item == articles.first %>
         <li class="prod1">
-          <input type="radio" name="product" id="product-<%=item.id%>" value="a" checked>
+          <input type="radio" name="product" id="product-<%=item.id%>" value="a" >
             <label for="product-<%=item.id%>">  
             <img src="<%=item.photo.url%>" alt="...">
           </label>
