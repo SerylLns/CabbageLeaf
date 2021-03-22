@@ -68,7 +68,7 @@ Article.create!(
   La campagne de Monica Lennon avait été soutenue par une large coalition de syndicats, d’organisations de femmes et d’associations caritatives. Sur Twitter, la députée a remercié « tous ceux qui ont fait campagne » ainsi que ses collègues parlementaires qui ont approuvé le texte. « C’est un jour de fierté pour l’Ecosse et un signal au monde qu’il est possible de mettre en place un accès universel gratuit aux protections périodiques », a-t-elle souligné.
   Rose Caldwell, directrice générale de l’organisation caritative Plan International UK, a salué le rôle « pionnier » de l’Ecosse. Elle a rappelé l’importance de cette loi, expliquant qu’un « trio toxique » de problèmes provoquait la précarité menstruelle : le « coût des protections hygiéniques », le « manque d’éducation » et la « stigmatisation et la honte liée aux règles ».
   En France, la distribution gratuite de protections hygiéniques est expérimentée dans plusieurs collèges et lycées ainsi qu’auprès des femmes en situation de précarité.",
-  category: "femme, sante, droit"
+  category: "femme, santé, droit"
 )
 file = URI.open('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimg.lemde.fr%2F2020%2F02%2F12%2F78%2F0%2F3888%2F1939%2F1440%2F720%2F60%2F0%2Fc97d05e_q7yof1vA-kDc6b4mKWG51C8z.jpg')
 Article.last.photo.attach(io: file, filename: 'tampax.png', content_type: 'image/jpg')
@@ -131,7 +131,7 @@ Article.create!(
   Elle était endémique partout dans le monde, jusqu'à la découverte d'un vaccin dans les années 1950. Les pays les plus riches y ont eu rapidement accès, mais l'Asie et l'Afrique sont restés longtemps d'importants foyers infectieux.
   Convaincre les populations
   En 1988, l'OMS dénombrait 350 000 cas à travers le monde et encore plus de 70 000 cas rien qu'en Afrique en 1996.",
-  category: "sante, science, afrique"
+  category: "santé, science, afrique"
 )
 file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911045/The%20Cabbage%20Leaf/polio2_yavfqz.jpg')
 Article.last.photo.attach(io: file, filename: 'petitafricain.png', content_type: 'image/jpg')
