@@ -25,13 +25,13 @@ import { animMenu } from '../plugins/anim-menu'
 import { animCard } from '../plugins/animate-indexcard'
 import { carousel } from '../plugins/carousel'
 
-import { toggleColor } from '../plugins/color-mood'
+// import { toggleColor } from '../plugins/color-mood'
 
 document.addEventListener('turbolinks:load', () => {
   animMenu();
   animHome();
   animCard();
-  toggleColor();
+  // toggleColor();
   carousel();
 
   // animRank();
