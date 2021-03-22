@@ -70,8 +70,10 @@
 .menu{
   width: 70vw;
   height: 100vh;
+  visibility: hidden;
+  transition: 2s;
   background-color: $very-light-lavander;
-  right: 0vw;
+  right: -70vw;
   position: absolute;
   z-index: 45;
   font-family: Roboto, sans-serif;
@@ -137,4 +139,9 @@
   top: 5vh;
   left: 5vw;
   background-color: var(--lavander);
+}
+.menu.open{
+  transform: translateX(-70vw);
+  transition: 2s;
+  visibility: visible;
 }
