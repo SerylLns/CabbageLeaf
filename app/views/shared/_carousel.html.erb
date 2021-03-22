@@ -18,7 +18,9 @@
             <input type="radio" name="product" id="product-<%=item.id%>" value="a" >
             <label for="product-<%=item.id%>">  
             <img src="<%=item.photo.url%>" alt="...">
-            <p class="position-rank"><span><%= index +1 %></span></p>
+              <%= link_to article_path(item) do %>
+                <p class="position-rank"><span><%= index +1 %></span></p>
+              <% end %>
             </label>
           </li>
       <% end %>
