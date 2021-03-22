@@ -4,6 +4,7 @@ class Article < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
   validates :category, presence: true
+
   CATEGORIES = ["sport", "femme", "monde", "france", "lgbt+", "droit", "animaux", "afrique",
                 "europe","santé","innovation","écologie","découverte","business", "éthique", "nature",
                 "science","amérique", "tourisme"]

@@ -2,9 +2,11 @@
     <%# <%= render  "pages/select" %>
   </div>
 <div class="account-page">
+    <span class="account-photo-wrap">
     <div class="account-photo">   
       <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cOyOI9NJ5DnPb12SDg0_UQHaKi%26pid%3DApi&f=1" alt="" srcset="">
     </div>
+    </span>
     <div class="leaf-left">
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-09_u7ezti") %>
     </div>
@@ -13,18 +15,21 @@
     </div>
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
-      <p>SDF</p>
+      <p>Fan de choux de Bruxelles</p>
 
       <form action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
-          <option disabled hidden selected>Trier par Tag</option>
+          <option disabled hidden selected>Trier par tag</option>
             <option>Tout(e)s</option>
-            <% Article::CATEGORIES.each do |cat| %>
+            <% Article::CATEGORIES.sort.each do |cat| %>
               <option><%= cat %></option>
             <% end %>
         </select>
-        <button type="submit"></button>
-      </form>      
+        <div class="select-tag">
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6", class: "button-leaf") %>
+        <button type="submit" id="button-tag"></button>
+        </div>
+      </form>
     </div>
   <% @articles.each do |article| %>
     <div class="account-card">
