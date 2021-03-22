@@ -9,6 +9,6 @@ class Article < ApplicationRecord
                 "science","amerique", "tourisme"]
 
   def get_tags
-    return self.category.split(", ")
+    return self.category.split(", ").sort
   end
 end

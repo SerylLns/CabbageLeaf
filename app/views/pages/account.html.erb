@@ -21,7 +21,7 @@
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
           <option disabled hidden selected>Trier par Tag</option>
             <option>Tout(e)s</option>
-            <% Article::CATEGORIES.each do |cat| %>
+            <% Article::CATEGORIES.sort.each do |cat| %>
               <option><%= cat %></option>
             <% end %>
         </select>
