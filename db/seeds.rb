@@ -41,7 +41,7 @@ Article.create!(
   Les joueuses brésiliennes avaient déjà touché des primes équivalentes à celles des hommes lors du Tournoi de France, organisé en mars.
   La sélectionneuse de 60 ans, qui a mené les Américaines à deux titres olympiques en 2008 et 2012, a également célébré l’arrivée d’une femme, Duda Luizelli, à la coordination des sélections féminines, poste occupé auparavant par un homme.
   Et la CBF a également créé un nouveau poste-clé, celui de coordinatrice des compétitions de football féminin. C’est Aline Pellegrino qui sera chargée de l’organisation des tournois de clubs au Brésil.",
-  category:"sport, femme amerique"
+  category:"sport, femme, amerique"
 )
 file = URI.open('https://img.lemde.fr/2020/09/02/0/0/6000/4000/1328/0/45/0/2d7f179_5252699-01-06.jpg')
 Article.last.photo.attach(io: file, filename: 'deuxfemmes.png', content_type: 'image/jpg')
@@ -131,7 +131,7 @@ Article.create!(
   Elle était endémique partout dans le monde, jusqu'à la découverte d'un vaccin dans les années 1950. Les pays les plus riches y ont eu rapidement accès, mais l'Asie et l'Afrique sont restés longtemps d'importants foyers infectieux.
   Convaincre les populations
   En 1988, l'OMS dénombrait 350 000 cas à travers le monde et encore plus de 70 000 cas rien qu'en Afrique en 1996.",
-  category: "sante, afrique"
+  category: "sante, science, afrique"
 )
 file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911045/The%20Cabbage%20Leaf/polio2_yavfqz.jpg')
 Article.last.photo.attach(io: file, filename: 'petitafricain.png', content_type: 'image/jpg')
