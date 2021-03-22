@@ -16,15 +16,50 @@
 
 }
 
+// Bouton "croix + lire tout de suite"
 .btn-index{
   height: 7vh;
   width: 7vh;
   border-radius: 50%;
   background-color: $blue;
   opacity: .5;
-  margin: 0 2vh 6vw 2vh;
+  margin: 0 3vh 6vw 2vh;
 }
+ #delete-btn{
+  height: 9vh;
+  width: 9vh;
+  fill: white;
+  z-index: 20;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 5vh;
+  left: 10vw,
+ }
+
 #btn-save{
+  height: 9vh;
+  width: 9vh;
+  fill: white;
+  z-index: 20;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 5.5vh;
+  left: 10vw,
+ }
+
+// Bouton "Lire plus tard"
+// .btn-index2{
+//   height: 8vh;
+//   width: 8vh;
+//   border-radius: 50%;
+//   background-color: $blue;
+//   opacity: .5;
+//   margin: 0 3vh 6vw 2vh;
+// }
+
+#btn-readLater{
   height: 10vh;
   width: 10vh;
   fill: white;
@@ -32,8 +67,10 @@
   opacity: 1;
   position: absolute;
   transform: translate(-50%,-50%);
-  top: 50%;
-  left: 50%,
-
-// margin-bottom: 5vh;
+  top: 5vh;
+  left: 10.5vw,
  }
+
+
+
+
