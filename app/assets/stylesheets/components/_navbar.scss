@@ -71,7 +71,7 @@
   width: 70vw;
   height: 100vh;
   visibility: hidden;
-  transition: 2s;
+  transition: 1s;
   background-color: $very-light-lavander;
   right: -70vw;
   position: absolute;
@@ -126,7 +126,7 @@
 }
 
 .social-media{
-  margin-left: 4vw;
+  margin-left: 1.2vw;
   margin-top: 4vh;
 }
 
@@ -142,6 +142,6 @@
 }
 .menu.open{
   transform: translateX(-70vw);
-  transition: 2s;
+  transition: 1s;
   visibility: visible;
 }
