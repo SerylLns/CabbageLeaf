@@ -30,5 +30,5 @@ document.addEventListener('turbolinks:load', () => {
   animHome();
   animCard();
   // animRank();
-  document.documentElement.style.setProperty("--lightblue","#4CAF50");
+  // document.documentElement.style.setProperty("--lightblue","#4CAF50");
 });

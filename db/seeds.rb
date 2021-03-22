@@ -7,7 +7,7 @@ User.destroy_all
 User.create!( username: "augustin", email: "augustin@lewagon.com", password: "password" )
 
 Article.create!(
-  title: "Après l'Allemagne, l'Albanie interdit les 'thérapies de conversion' des homosexuels",
+  title: "Après l'Allemagne, l'Albanie interdit les ”thérapies de conversion” des homosexuels",
   content:"Depuis vendredi, les 'thérapies de conversion' des homosexuels sont illégales en Albanie. Alors qu'un texte voté en mars 2018 par le Parlement européen enjoignait les pays des l'UE à interdire ces pratiques, peu d'États membres ont depuis légiféré en ce sens.
           L'Albanie rejoint Malte, certaines autonomies espagnoles, et dernièrement l'Allemagne, ayant déjà banni ces pratiques. Les psychologues albanais ont interdit les prétendues 'thérapies de conversion' qui visent à changer l'orientation sexuelle de jeunes membres de la communauté LGBTI (lesbiennes, gays, bisexuels, transgenres et intersexe),
           une avancée saluée, samedi 16 mai, par les associations de défense des droits dans le pays.
@@ -148,7 +148,7 @@ file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911530/T
 Article.last.photo.attach(io: file, filename: 'deschamals.jpg', content_type: 'image/jpg')
 # 10X
 Article.create!(
-  title:"Allonger le congé paternité : une nouvelle avancée pour mieux accompagner les premiers jours de l’enfant.",
+  title:"Allonger le congé paternité : une nouvelle avancée.",
   content:"Le Sénat a adopté, ce samedi 14 novembre, l’allongement du congé de paternité à 28 jours dont 7 obligatoires dans les mêmes termes que l’Assemblée nationale.
   “Une réforme historique”, s’est réjoui le secrétaire d’État chargé de l’Enfance et des Familles Adrien Taquet. Ce samedi 14 novembre, le Sénat a adopté à une écrasante majorité l’allongement du congé de paternité. Les jeunes papas auront désormais droit à 28 jours de congé, dont 7 seront obligatoires.
   La mesure entrera en vigueur à partir du 1er juillet 2021, dans neuf mois donc. Tous les futurs parents qui entendent se lancer dans l’aventure à partir d’aujourd’hui bénéficieront donc de cette mesure. Le Journal des femmes précise que les 7 jours obligatoires seront à prendre à la naissance de l’enfant.
@@ -179,7 +179,7 @@ Article.create!(
   Article.last.photo.attach(io: file, filename: 'donaldtrump.png', content_type: 'image/png')
 
   Article.create!(
-  title:"Elle est venue aux États-Unis pour étudier avec seulement 300 $ dans sa poche - Maintenant, elle est directrice de la NASA pour le Mars Rover",
+  title:"L'histoire courageuse de la nouvelle directrice de la NASA pour le projet Mars Rover",
   content:"Pour une petite fille qui a grandi en Colombie dans les années 1980, une carrière scientifique à la NASA a peut-être semblé aussi probable que de mettre le pied sur une planète lointaine. De nos jours, cependant, Diana Trujillo est ingénieure en aérospatiale.
   En fait, elle dirige une équipe de 45 personnes au laboratoire de la NASA qui est responsable du bras robotique du dernier rover martien.
   NASA/JPL-Caltech, illustration de l’atterrissage du rover Perseverance. Comment Diana est-elle passée du simple rêve du cosmos à son exploration réelle ? C’est une histoire de persévérance qui a peut-être été écrite dans les étoiles.
