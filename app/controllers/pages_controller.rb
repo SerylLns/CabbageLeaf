@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def account
+    @article = Article.new
     @articles = current_user.articles.order(interactions: :desc)
   end
   def filter

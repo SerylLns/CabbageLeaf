@@ -14,9 +14,7 @@
       <div class="divider-plause"></div>
     </div>
     <div class="card-rank">
-      <% @articles_liked.each do |article| %>
-        <%= cl_image_tag(article.photo.url) %>
-      <% end %>
+       <%= render "shared/carousel", articles: @articles_liked %>  
     </div>
   </div>
 
