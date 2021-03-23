@@ -18,4 +18,19 @@ class User < ApplicationRecord
     return false
   end
 
+  def is_liked?(article)
+    interaction = find_interaction(article)
+    if interaction && interaction.liked
+      return true   
+    end
+    return false
+  end
+  def is_saved?(article)
+    interaction = find_interaction(article)
+    if interaction && interaction.read_later == true
+      return true
+    else   
+      return false
+    end
+  end
 end
