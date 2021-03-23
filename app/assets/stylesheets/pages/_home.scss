@@ -184,3 +184,16 @@
   font-family:'Hurmegeo-light';
   color: black;
 }
+
+.scroll-up, .scroll-down {
+  height: 100vh;
+  z-index: 50;
+  transition: 3s;
+}
+
+.scroll-up {
+  bottom: 0;
+}
+.scroll-down{
+  top: 0;
+}
