@@ -35,13 +35,12 @@
 
       <!-- Button Cabbage leaf - Read later -->
       <div class="buttonChou">
-        <%= link_to article_interactions_path(@article), method: "post"  do %>
-        <div id= "chou">
-          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
-          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <%= link_to article_path(@article) do  %>
+        <div id = "btn-save">
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/valide_violette-11_pgap4q")%>
+          <% end %>
         </div>
-        <div class="btn-index"></div>
-        <% end %>
+        <div class = "btn-index"></div>
       </div>
     </div>
 

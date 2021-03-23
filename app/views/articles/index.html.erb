@@ -34,18 +34,21 @@
       </div>
 
       <%# BTN SAVE (chou) %>
-      <div class="buttonChou">
-        <div id = "btn-readLater" data-article=<%= article.id%>>
-          <% if user_signed_in? && current_user.is_saved?(article) %>
-            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/eyes-25_ctwfof") %>
-          <% else %>
-            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
-          <% end %>
+      <% if user_signed_in? %>
+        <div class="buttonChou">
+          <div id = "btn-readLater" data-article=<%= article.id%>>
+            <% if user_signed_in? && current_user.is_saved?(article) %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/eyes-25_ctwfof") %>
+            <% else %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
+            <% end %>
+          </div>
+          <div class = "btn-index"></div>
         </div>
-        <div class = "btn-index"></div>
-      </div>
+      <% end %>
 
       <%# BTN Valider %>
+
       <div class="buttonChou">
         <%= link_to article_path(article) do  %>
         <div id = "btn-save">
