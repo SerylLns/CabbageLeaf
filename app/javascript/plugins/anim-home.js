@@ -105,7 +105,7 @@ const animHome = () => {
               lastPageHome.hidden = true
             }
           })
-
+          
     };
 }
 
