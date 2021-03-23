@@ -1,12 +1,14 @@
 <%# trouver un index unique %>
+
 <div id="carousel-thingy" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
   <div class="item active">
     <ul class="reset clearfix">
     <% articles.each_with_index do |item, index| %>
+      <% id = rand(0..100000) %>
       <li class="prod1">
-        <input type="radio" name="product" id="product-<%=item.id + index%>" value="a" >
-        <label for="product-<%=item.id + index%>">  
+        <input type="radio" name="product" id="product-<%=id%>" value="a" >
+        <label for="product-<%=id%>">  
         <img src="<%=item.photo.url%>" alt="...">
         <%= link_to article_path(item) do %>
           <p class="position-rank"><span><%= index +1 %></span></p>
