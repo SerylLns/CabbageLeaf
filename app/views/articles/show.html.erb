@@ -24,13 +24,19 @@
     <!-- Button Applause -->
     <div class="conteuhnaire">
       <div class="buttonChou">
-        <%= link_to article_interactions_like_path(@article) do %>
         <div id="claps">
-          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+        <%= link_to article_interactions_like_path(@article) do %>
+          <% if user_signed_in? && current_user.is_liked?(@article) %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/clap_clic-21_vcjc8v") %>
+          <% elsif params[:to] == "home" %>
+              <%= cl_image_tag("The%20Cabbage%20Leaf/LOGO%20-%20PICTO/Arrow_thecabbage_leaf-02_hqmgxf.svg", :height=>50, :crop=>"scale") %>
+          <% else %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+          <% end %>
+        <% end %>
           <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         </div>
         <div class="btn-index"></div>
-        <% end %>
       </div>
 
       <!-- Button Cabbage leaf - Read later -->
