@@ -42,12 +42,14 @@
   justify-content: center;
   align-items: center;
   border: 6px solid black;
+  h1{
+    margin-bottom: 0px;
+  }
   .home-title{
     color: black;
     text-align: center;
     font-size: 28px;
     font-family:'Hurmegeo-bold';
-    line-height: 35px;
     letter-spacing: normal;
   }
   .home-text{
@@ -59,7 +61,7 @@
   .home-logo{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 30vh;
+    top: 33vh;
     left: 50%;
   }
 }
@@ -69,6 +71,8 @@
   height: 3px;
   background-color: black;
   border-radius: 30%;
+  // margin-bottom: 5vh;
+  // margin-top: 0px;
 }
 // COLOR BACKGROUND
 .color-top{
