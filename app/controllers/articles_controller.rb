@@ -2,11 +2,13 @@ class ArticlesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index]
 
   def index
-    sleep(3)
+    if params[:a] #???? sa marche ?????
+      sleep(3)
+    end
     @articles = Article.all
     @interaction = Interaction.new
   end
-
+  
   def show
     @article = Article.find(params[:id])
   end
