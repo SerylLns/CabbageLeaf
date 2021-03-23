@@ -1,12 +1,9 @@
-  <div class="account-head">
-    <%# <%= render  "pages/select" %>
-  </div>
-<div class="account-page">
-    <span class="account-photo-wrap">
+<div class="account-head">
+  <%# <%= render  "pages/select" %>
+  <div class="account-page">
     <div class="account-photo">
-      <img src="https://res.cloudinary.com/df310vkui/image/upload/v1616440202/The%20Cabbage%20Leaf/Photo_500x500_rdon4q.jpg" alt="" srcset="">
+      <img src="https://res.cloudinary.com/df310vkui/image/upload/v1616440202/The%20Cabbage%20Leaf/Photo_500x500_rdon4q.jpg" alt="photo profil">
     </div>
-    </span>
     <div class="leaf-left">
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_Leaf-09_u7ezti") %>
     </div>
@@ -15,36 +12,34 @@
     </div>
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
-      <p>Graphic Designer</p>
-
+      <p>Graphic Designer <br> UX, UI Designer à votre service</p>
       <form action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
           <option disabled hidden selected>Trier par tag</option>
-            <option>Tout(e)s</option>
-            <% Article::CATEGORIES.sort.each do |cat| %>
-              <option><%= cat %></option>
-            <% end %>
+          <option>Tout(e)s</option>
+          <% Article::CATEGORIES.sort.each do |cat| %>
+          <option><%= cat %></option>
+          <% end %>
         </select>
-        <div class="select-tag">
+       <!--  <div class="select-tag">
           <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6", class: "button-leaf") %>
-        <button type="submit" id="button-tag"></button>
-        </div>
+          <button type="submit" id="button-tag"></button>
+        </div> -->
       </form>
     </div>
+  </div>
   <% @articles.each do |article| %>
-    <div class="account-card">
-      <img src="<%=article.photo.url%>" alt="" class="img-card-top">
-      <%= link_to article_path(article) do  %>
-        <h4 class="title"><%= article.title %></h4>
+  <div class="account-card">
+    <img src="<%=article.photo.url%>" alt="" class="img-card-top">
+    <%= link_to article_path(article) do  %>
+    <h4 class="title"><%= article.title %></h4>
+    <% end %>
+    <div class="divider"></div>
+    <div class="index-tags">
+      <% article.category.split(",").each do |cat| %>
+      <p class="index-tag">#<%= cat %></p>
       <% end %>
-      <div class="divider"></div>
-      <div class="index-tags">
-            <% article.category.split(",").each do |cat| %>
-            <p class="index-tag">#<%= cat %></p>
-            <% end %>
-      </div>
     </div>
+  </div>
   <% end %>
-
-
 </div>
