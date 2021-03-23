@@ -114,6 +114,10 @@
   justify-content: center;
 }
 
+.hidden-dropdow{
+  display: none;
+}
+
 #button-tag {
   position: relative;
   right: -3vw;
@@ -122,6 +126,8 @@
   opacity: 0;
   text-decoration: none;
 }
+
+
 
 // .button-leaf {
 //   width: 11vw;
@@ -139,6 +145,7 @@
   margin-bottom: 4vh;
   box-shadow: 2px 2px 6px rgba(2,30,115,0.2);
   border-radius: 1vh;
+  position: relative;
 }
 
 .img-card-top{

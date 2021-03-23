@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   end
   def filter
     categorie = params[:categorie]
-    if categorie == "Tout(e)s" 
+    if categorie == "Toutes"
       @articles = current_user.articles
     else
       @articles = current_user.articles.select {|article| article.get_tags.include?(categorie)}

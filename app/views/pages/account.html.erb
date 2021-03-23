@@ -15,21 +15,23 @@
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
       <p>Graphic Designer <br> UX, UI Designer à votre service</p>
+
+      <!-- JS dropdow -->
       <form class="dropdown" action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
           <option disabled hidden selected>Trier par tag</option>
-          <option>Tout(e)s</option>
+          <option>Toutes</option>
           <% Article::CATEGORIES.sort.each do |cat| %>
           <option><%= cat %></option>
           <% end %>
         </select>
-        <!--  <div class="select-tag">
-          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6", class: "button-leaf") %>
-          <button type="submit" id="button-tag"></button>
-        </div> -->
+        <button type="submit" class="hidden-dropdow" id="button-tag"></button>
       </form>
+
     </div>
   </div>
+
+  <!-- Card blanche -->
   <% @articles.each do |article| %>
   <div class="account-card">
     <img src="<%=article.photo.url%>" alt="" class="img-card-top">
@@ -45,3 +47,12 @@
   </div>
   <% end %>
 </div>
+
+<!-- JS dropdow -->
+<script>
+const dropdown = document.querySelector('#subject_input');
+const dropdownButton = document.querySelector('#button-tag');
+dropdown.addEventListener("change", () => {
+dropdownButton.click();
+});
+</script>
