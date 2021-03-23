@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :show] do
     resources :interactions, only: [:show, :create]
     get "like", to: "interactions#like", as: "interactions_like"
+    get "read", to: "interactions#read", as: "interactions_read"
   end
 
   get "account", to: "pages#account"
