@@ -1,12 +1,11 @@
-const markAsRead = (id) => {
+const markAsRead = (element) => {
   // console.log(button.dataset)
+   const id = element.dataset.article
   fetch(`articles/${id}/read_later`)
      .then(response => {
         console.log(response);
       });
 };
-
-
 
 const animCard = () => {
   const buttonReadLater = document.querySelectorAll("#btn-readLater");
@@ -15,7 +14,7 @@ const animCard = () => {
   if (buttonReadLater) {  
       buttonReadLater.forEach(button => {
       button.addEventListener("click", (e)=>{
-        markAsRead(e.currentTarget.dataset.article);
+        markAsRead(e.currentTarget);
         const card = e.currentTarget.parentNode.parentNode.parentNode 
         setTimeout(() => {
           card.hidden = true;

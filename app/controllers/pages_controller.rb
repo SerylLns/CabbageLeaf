@@ -6,8 +6,11 @@ class PagesController < ApplicationController
 
   def account
     @article = Article.new
-    @articles = current_user.articles.order(interactions: :desc)
+    interactions = current_user.interactions.where("interactions.read_later = true")
+    # @articles = current_user.articles.order(interactions: :desc)
+    @articles = interactions.map {|int| int.article}
   end
+
   def filter
     categorie = params[:categorie]
     if categorie == "Toutes"

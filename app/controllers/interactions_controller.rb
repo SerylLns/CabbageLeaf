@@ -1,5 +1,5 @@
 class InteractionsController < ApplicationController
-  before_action :get_article, only: [:create, :like, :read]
+  before_action :get_article, only: [:create, :like, :read_later]
 
   def read_later
     interaction = current_user.find_interaction(@article)
@@ -7,10 +7,12 @@ class InteractionsController < ApplicationController
     elsif interaction
       interaction.read_later = true
       interaction.save
+      redirect_to article_path(@article)
     else
       interaction = Interaction.create(user: current_user, article: @article)
       interaction.read_later = true
       interaction.save
+      redirect_to article_path(@article)
     end
   end
 
