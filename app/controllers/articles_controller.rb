@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index]
 
   def index
+    sleep(3)
     @articles = Article.all
     @interaction = Interaction.new
   end

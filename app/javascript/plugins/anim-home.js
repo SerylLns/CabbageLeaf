@@ -7,6 +7,8 @@ const animHome = () => {
   const mood2 = document.querySelector(".color-bottom .mood");
   const buttonMood = document.querySelector(".btn-mood");
   const lastPageHome = document.querySelector('.last-part');
+  const btnZen = document.querySelector('.zen-mood');
+  const btnPeps = document.querySelector('.peps-mood');
   if (homeFirstPart) {
     const logoTimeline = anime.timeline({
       autoplay: false
@@ -101,10 +103,16 @@ const animHome = () => {
             complete: function (homeTimeline) {
               const borderHome = document.querySelector('.home-border');
               borderHome.hidden = true;
-              
+
               lastPageHome.hidden = true
             }
           })
+          btnZen.addEventListener("click", (e)=> {
+            mood2.parentNode.classList.add('scroll-up');
+          });
+          btnPeps.addEventListener("click", (e)=> {
+            mood.parentNode.classList.add('scroll-down');
+          });
           
     };
 }
