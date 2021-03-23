@@ -108,18 +108,12 @@ const animHome = () => {
             }
           })
           btnZen.addEventListener("click", (e)=> {
-            // mood2.parentNode.style.height = "100vh";
-            // mood2.parentNode.style.top = "0";
-            // buttonMood.hidden = true
             mood2.parentNode.classList.add('scroll-up');
           });
           btnPeps.addEventListener("click", (e)=> {
-            // mood2.parentNode.hidden = true;
-            // mood.parentNode.style.height = "100vh";
-            // mood.parentNode.style.top = "0";
-            // buttonMood.hidden = true;
             mood.parentNode.classList.add('scroll-down');
           });
+          
     };
 }
 
