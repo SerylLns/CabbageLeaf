@@ -1,7 +1,6 @@
 .account-page{
   width: 100vw;
-  background-color: #fff;
-  z-index: -1;
+  // background-color: #ffff;
   display: flex;
   flex-direction: column;
   padding-top: 5vh;
@@ -14,49 +13,59 @@
   width: 100vw;
   height: 50vh;
   padding-top: 5vh;
-  background: rgba($blue, 0.61);
+  background: rgba($blue, 0.60);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.account-photo{
-  z-index: 2;
-}
-
-.account-photo-wrap {
-  filter: drop-shadow(0 0 1vh #021E73);
-  z-index: 2;
+.cercle {
+  height: 160px;
+  width:160px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(169,166,255,1) 5%, rgba(142,191,255,1) 100%);
+  position: relative;
 }
 
 .account-photo img{
-  width: 36vw;
-  height: 18vh;
-  clip-path: circle();
-  border: 3px solid $blue;
-  margin-bottom: 1vh;
+  // margin-bottom: 1vh;
   z-index: 2;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left:50%;
+
+
 }
 
+.account-name{
+  font-family: 'Hurmegeo-bold';
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #021E73;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+
+}
 .account-info{
   margin-bottom: 4vh;
   z-index: 1;
   p {
     color: #021E73;
-    font-family: 'Hurmegeo-light';
+    font-family: 'Hurmegeo';
     display: flex;
     justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    letter-spacing: normal;
   }
-}
-
-.account-name {
-  font-family: 'Hurmegeo-bold';
-  font-weight: bold;
-  font-size: 10vw;
-  text-transform: uppercase;
-  color: #021E73;
-  display: flex;
-  justify-content: center;
 }
 
 .leaf-right{
@@ -69,15 +78,18 @@
   top: 9vh;
   right: 53vw;
   position: absolute;
+  z-index: -1;
 }
 .leaf-right img{
   width: 25vw;
   transform: rotateZ(19deg);
+  z-index: 1;
+  margin-top: 6vh;
 }
 .leaf-left img{
   transform: rotateZ(282deg);
-  width: 35vw;
-  z-index: -1;
+  width: 36vw;
+  margin-top: 5vh;
 }
 
 form {
@@ -108,15 +120,16 @@ form {
   width: 8vw;
   height: 3vh;
   opacity: 0;
+  text-decoration: none;
 }
 
-.button-leaf {
-  width: 11vw;
-  height: 4vh;
-  top: 35vh;
-  right: 23vw;
-  position: absolute;
-}
+// .button-leaf {
+//   width: 11vw;
+//   height: 4vh;
+//   top: 35vh;
+//   right: 23vw;
+//   position: absolute;
+// }
 
 .account-card{
   z-index: 2;
@@ -124,7 +137,7 @@ form {
   width: 80vw;
   height: 40vh;
   margin-bottom: 4vh;
-  box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
+  box-shadow: 2px 2px 6px rgba(2,30,115,0.2);
   border-radius: 1vh;
 }
 
