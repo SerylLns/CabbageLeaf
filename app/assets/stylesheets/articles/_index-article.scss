@@ -15,11 +15,12 @@
 
 .my-card{
   background: white;
-  margin: 2vh 5vh;
+  margin: 2vh 4vh;
   width: 90vh;
   z-index: 2;
   border-radius: 5px;
   box-shadow: 2px 2px 6px rgba(2,30,115,0.3);
+
 }
 
 .image-card img{
@@ -98,7 +99,17 @@
   font-family: "Hurmegeo";
 }
 
-// Feuille de chou
+.index-tags p {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    height: 3vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+// Feuille de chou en background
 .chouquette{
   position: absolute;
   width: 50vw;
@@ -107,3 +118,5 @@
   left: 0vw;
   z-index: 0;
 }
+
+
