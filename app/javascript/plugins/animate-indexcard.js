@@ -1,3 +1,8 @@
+const markAsRead = () => {
+  
+};
+
+
 
 const animCard = () => {
   const buttonSupp = document.querySelectorAll("#delete-btn");

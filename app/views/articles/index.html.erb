@@ -20,7 +20,6 @@
       <!-- Text -->
       <div class="index-text">
         <p> <%= article.content[0..150] %>...
-          <a  href="articles/<%=article.id%>"><br>LIRE LA SUITE ?</a>
         </p>
       </div>
     </div>
@@ -36,13 +35,14 @@
 
       <%# BTN SAVE (chou) %>
       <div class="buttonChou">
-        <%= link_to  article_interactions_path(article), method: "post" do %>
-        <div id = "btn-readLater">
+        <div id = "btn-readLater" data-article= <%= article.id%>>
+        <% if current_user.is_saved?(article) %>
+          <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/eyes-25_ctwfof") %>
+        <% else %>
           <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
-          <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <% end %>
         </div>
         <div class = "btn-index"></div>
-        <% end %>
       </div>
 
       <%# BTN Valider %>
