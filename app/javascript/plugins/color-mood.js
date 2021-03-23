@@ -19,8 +19,8 @@ const toggleColor = () => {
   const toggleBtn = document.querySelector(".switch");
   toggleBtn.addEventListener(("click"), (e) => {
     console.log('click')
-    document.documentElement.style.setProperty("--light-blue", canary);
-    document.documentElement.style.setProperty("--light-lavander", orange);
+    // document.documentElement.style.setProperty("--light-blue", canary);
+    // document.documentElement.style.setProperty("--light-lavander", orange);
     // document.documentElement.style.setProperty("--light-blue", canary);
   });
 };
