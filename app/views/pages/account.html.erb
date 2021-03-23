@@ -15,7 +15,7 @@
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
       <p>Graphic Designer <br> UX, UI Designer à votre service</p>
-      <form action="/filter" method="get">
+      <form class="dropdown" action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
           <option disabled hidden selected>Trier par tag</option>
           <option>Tout(e)s</option>
