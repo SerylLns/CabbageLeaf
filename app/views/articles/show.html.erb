@@ -28,8 +28,6 @@
         <%= link_to article_interactions_like_path(@article) do %>
           <% if user_signed_in? && current_user.is_liked?(@article) %>
               <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/clap_clic-21_vcjc8v") %>
-          <% elsif params[:to] == "home" %>
-              <%= cl_image_tag("The%20Cabbage%20Leaf/LOGO%20-%20PICTO/Arrow_thecabbage_leaf-02_hqmgxf.svg", :height=>50, :crop=>"scale") %>
           <% else %>
               <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
           <% end %>
