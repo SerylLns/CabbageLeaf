@@ -200,3 +200,86 @@ Article.create!(
   )
   file = URI.open('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.goodnewsnetwork.org%2Fwp-content%2Fuploads%2F2021%2F03%2FDiana_Trujillo-public-domain-NASA-on-the-Commons-%40-Flickr-Commons.jpg')
   Article.last.photo.attach(io: file, filename: 'lameufastronaute.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+    title:"Un train qui roule à l'hydrogène en septembre",
+    content:"La SNCF est engagée dans un ambitieux plan en faveur de sa transition énergétique, du verdissement du ferroviaire et de la neutralité carbone, qu'elle compte atteindre en 2050. Pour y parvenir, elle investit notamment dans des rames à hydrogène. Un premier train a déjà été expérimenté dans différents pays d'Europe. Il devrait être testé en France, sur un tronçon régional, en septembre prochain. 
+    Les parties non électrifiées du réseau SNCF accueillent des locomotives et des automoteurs TER diesel qui produisent de fortes émissions de carbone. La SNCF travaille depuis plusieurs années, avec des constructeurs comme Alstom, au développement de matériels moins polluants. C'est ainsi que des rames à hydrogène devraient venir, progressivement, remplacer le matériel diesel sur le réseau français. Une mise en circulation commerciale est prévue en 2025.
+    Avant la mise en circulation commerciale, la SNCF va procéder à des expérimentations dont la première est prévue en septembre prochain sur le tronçon régional Tours - Loches.  Un porte-parole du groupe ferroviaire français indiquait ainsi à l'AFP : «Des discussions et des études de faisabilité sont en cours pour répondre au projet de la Région Centre-Val-de-Loire, d'expérimenter un train Alstom iLint.» ; tandis qu'un responsable régional du Centre Val de Loire précisait : « Il s'agira clairement d'une circulation d'essai, pas d'une circulation commerciale, le train allemand n'étant pas homologué en France ». 
+    C'est en effet un train allemand construit par Alstom qui a été choisi pour l'expérimentation française. Ce train ultra moderne a d'ores et déjà été testé en Allemagne, aux Pays-Bas et en Autriche entre 2018 et 2020. Les succès enregistrés ont poussé la région Centre Val de Loire à se porter candidate pour tester à son tour cette technologie verte et innovante. La ligne Tours-Loches qui a été retenue pour l'expérimentation, fait en effet partie des 'petites lignes' dont la région doit entièrement reprendre la gestion.
+    Outre cette expérimentation, la SNCF est engagée depuis 2018 avec Alstom, dans la mise au point d'un modèle français de train à hydrogène. Ce modèle bimode hydrogène-électrique pourra atteindre une vitesse maximale de 160 km/h et transporter jusqu'à 220 passagers pour une autonomie comprise entre 400 et 600 km. Les premiers essais de ces trains régionaux à hydrogène sont prévus pour 2024. 
+    Ces rames font partie d'une commande groupée de 14 trains passée à Alstom par quatre Régions françaises : La Bourgogne-Franche-Comté, l'Auvergne-Rhône-Alpes, le Grand-Est et l'Occitanie. Même si les discussions entre Alstom et la SNCF ont pris du retard et que les premiers prototypes de ce modèle bimode hydrogène-électrique ne devraient pas circuler avant 2024, Jean-Baptiste Djebbari, le ministre français des Transports s'est félicité de cette dynamique : « Nous préparons les transitions de ces 20-30 prochaines années. L'enjeu, c'est la massification de la production d'hydrogène décarboné ».",
+    category: "écologie,innovation,france"
+    )
+    file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616601514/The%20Cabbage%20Leaf/SNCF_jrfno7.webp')
+    Article.last.photo.attach(io: file, filename: 'petittrainbleudelasncf.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+  title:"Une start-up malgache conçoit le premier ordinateur 100% solaire",
+  content:"À Madagascar, une équipe de « Géo Trouvetou » vient de créer un ordinateur 100 % solaire, conçu entièrement sur la Grande Ile. Loin d’être un gadget encore en phase de rodage, l’ordinateur a déjà été commandé en 24 exemplaires pour équiper notamment des établissements scolaires en brousse et des centres de santé, dépourvus d’électricité.
+  «Voilà, ça c’est notre Jirodesk II. Comme vous pouvez le voir, c’est un 'tout-en-un'. La plus grosse modification qu’on ait faite, c’est qu’on a tout intégré dans l’écran », montre-t-on fièrement. Le prototype de la deuxième version de l’ordinateur solaire vient à peine d’être assemblé, qu’il est déjà présenté à ses premiers acheteurs, par l’équipe de conception. Un PC tout en un qui fonctionne sous Windows 10. 
+  Le réacteur de la bête : un disque dur de 64 Go, un processeur Intel Celeron et les 4 Go de RAM, se cache dans son écran 21 pouces. Les batteries sont intégrées sous le châssis et reliées à des panneaux solaires. Autonomie de l’ordinateur : 5h sans soleil.
+  Une grande première à Madagascar, que l’on doit aux frères Kasay, les fondateurs de Jirogasy, une start-up créée en 2018. La genèse de cette aventure, c’est Yann, l’aîné, 33 ans, qui la raconte. « On est partis de zero avec une seule imprimante 3D pour nous permettre de créer quelques pièces plastiques et pouvoir créer nos premiers kits solaires qu’on fabrique ici. On a eu besoin très vite d’une 2e imprimante 3D qu’on a fabriqué nous-mêmes à Mada avec des composants de récupération qu’on a trouvés ici. 
+  Et après avoir fabriqué cette imprimante, on s’est rendus compte qu’on pouvait fabriquer plein de choses sur l’île. Et c’est comme ça qu’avec notre équipe technique, on a abouti à la fabrication du premier PC solaire fabriqué à Mada, en local, du design aux entrailles du PC, jusqu’aux circuits imprimés.»",
+  category: "écologie,innovation,afrique"
+  )
+  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616602111/The%20Cabbage%20Leaf/ingé_et_techniciens_fxjanp.webp')
+  Article.last.photo.attach(io: file, filename: 'equipeingé.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+  title:"Mondiaux de ski de bosses : Perrine Laffont championne du monde en ski de bosses individuel, Benjamin Cavet décroche l'argent",
+  content:"Les Bleus en feu ! Perrine Laffont a remporté la médaille d’or aux championnats du monde de ski de bosses en individuel ce lundi 8 mars à Almaty alors que Ben Cavet a décroché lui l’argent chez les hommes. Après avoir dominé les qualifications, Laffont a ensuite surclassé ses adversaires pour remporter le seul titre qui manquait à son palmarès. Elle a devancé la Kazakhe Yuliya Galysheva et la Russe Anastasiia Smirnova. Benjamin Cavet a lui été devancé par l’ogre canadien Mikaël Kingsbury.
+  C’était le seul titre qui lui manquait, Perrine Laffont a corrigé cet affront à son immense palmarès. La Française a encore prouvé qu’elle était bien la reine des bosses en décrochant la médaille d’or à Almaty après le bronze et l’argent glané en 2019 et 2017. Elle était l’immense favorite de la compétition après avoir survolé le début de la saison, remportant quatre des cinq épreuves qu’elle a disputées cette saison. À seulement 22 ans, la championne Olympique a désormais tout gagné.
+  Perrine Laffont était déjà à l’heure tôt ce matin en dominant les qualifications avant de dérouler en finale. Parfaite sur la piste, ne se faisant pas piéger par le changement de rythme au milieu du run, comme sur les sauts, la Française a devancé la locale et tenante du titre Kazakh Yuliya Galysheva et la Russe Anastiasiia Smirnova pour se vêtir de la casaque de championne du monde. Très émue à l'annonce du résultat, elle détient désormais l'ensemble des titres mondiaux et olympiques.
+  Benjamin Cavet aurait bien imité sa compatriote pour empocher le titre mondial mais il n’a rien pu faire. Vainqueur des qualifications, le Français a été surclassé en finale par l’ogre de la discipline Mikaël Kingsbury, neuf fois vainqueur de la coupe du monde de ski acrobatique et pourtant victime d'une fracture de deux vertèbres il y a près de deux mois, en décembre 2020. Derrière le Québécois, le natif de Maidstone au Royaume-Uni décroche malgré tout la médaille d'argent comme il y a quatre ans en Sierra Nevada. Le Kazakh Pavel Kolmakov empoche la médaille de bronze.",
+  category: "sport,france,femme"
+  )
+  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616602443/The%20Cabbage%20Leaf/043_sw_ttnews010794_ptjhow.jpg')
+  Article.last.photo.attach(io: file, filename: 'allezlesbleus.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+  title:"Leclerc s’apprête à proposer une semaine de repas à 21 € tout compris",
+  content:"À partir du lundi 8 mars, le géant de la grande distribution va proposer dans tous ses magasins une offre destinée aux petits budgets : une semaine de repas, soit 21 au total, au prix de 1 € par repas. L’enseigne promet des produits respectant les recommandations nutritionnelles.
+  Début février, Michel-Édouard Leclerc, PDG de l’enseigne du même nom, annonçait sur le plateau de BFMTV la commercialisation de panier-repas à moins de 2 € pour les étudiants, en difficulté financière à cause de la pandémie de Covid-19. Un mois plus tard, l’enseigne s’apprête à lancer une nouvelle offre à destination de toutes les personnes ayant un petit budget, et non plus seulement des étudiants, indique Le Parisien.
+  Cette offre sera proposée dans tous les magasins Leclerc à partir du lundi 8 mars. La marque promet une semaine de repas équilibrés pour une personne, l’équivalent de 21 repas au prix unitaire de 1 €, soit 21 € au total.
+  Pour expliquer ce geste commercial, Leclerc s’appuie sur une enquête Ipsos de janvier 2021. Sa conclusion : manger équilibré serait trop cher pour un Français sur deux. L’enseigne entend donc rendre toujours plus accessible une alimentation saine et équilibrée.
+  Pour parvenir à tenir sa promesse de repas à 1 €, Leclerc explique au quotidien francilien que certains produits d’un même panier entrent dans la composition de plusieurs repas à la fois. Exemple avec quatre compotes vendues 0,90 € le lot,  mais qui serviront pour quatre repas différents ​.
+  Et le client, comment s’y retrouvera-t-il dans les rayons ? Il devra d’abord télécharger la liste de courses de son choix sur le site Internet dédié. Puis repérer les 65 produits en magasin, où ils seront signalés par des étiquettes. Un brin fastidieux. La tâche sera plus aisée en drive, puisqu’à chacun des quatre paniers proposés, correspondra une boutique dédiée.",
+  category: "business,santé,france"
+  )
+  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616602827/The%20Cabbage%20Leaf/MjAyMTAzYzA1NTc1MDRlNTAzMzNkNGVhZDU4MTAyMTZiMzEyYjA_xf3xhv.jpg')
+  Article.last.photo.attach(io: file, filename: 'leclerc.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+  title:"Naissance du premier enfant par greffe d’utérus en France",
+  content:"Une petite fille est née vendredi 12 février, deux ans après la greffe d’utérus dont avait bénéficié sa mère. C’est une première en France. Une petite fille de 1,845 kg est née, vendredi 12 février, à la suite d’une greffe d’utérus dont avait bénéficié sa mère, a annoncé l’hôpital Foch de Suresnes, mercredi 17 février.
+  «La mère et l’enfant vont bien», a assuré à l’Agence France-Presse le professeur Jean-Marc Ayoubi, chef de service de gynécologie-obstétrique et de médecine de la reproduction de l’hôpital Foch, dont l’équipe est responsable de cette prouesse.
+  La mère, Deborah, âgée de 36 ans, avait bénéficié en mars 2019 de la première greffe d’utérus française, réalisée par la même équipe. La donneuse n’était autre que sa mère, alors âgée de 57 ans. « On attend toujours un an pour être sûr que l’utérus greffé ne soit pas rejeté », souligne le professeur Ayoubi. Puis l’équipe médicale a été retardée par le premier confinement et l’arrêt de toutes les activités d’assistance médicale à la procréation. Autant de circonstances qui expliquent les délais.
+  «Le premier transfert a eu lieu en juillet dernier et la patiente a été enceinte après ce premier transfert», relate le professeur. La naissance s’est déroulée dans de très bonnes conditions et sans complications notables, selon l’hôpital Foch. Elle est intervenue après 33 semaines de grossesse.
+  Née sans utérus, la patiente greffée est atteinte du syndrome de Rokitansky, une condition qui touche une femme sur 4 500 à la naissance. Cette grossesse constitue un espoir pour les patientes nées sans utérus ou celles auxquelles il a dû être enlevé. Elle représente une alternative expérimentale à la gestation pour autrui, interdite en France, ou à l’adoption. Le traitement immunosuppresseur est moins lourd que pour d’autres transplantations d’organe. Il est adapté à la grossesse, comme on le fait dans le cas des greffées du rein enceintes.",
+  category: "femme,santé,france"
+  )
+  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616603104/The%20Cabbage%20Leaf/slack-imgs.com_sybp4n.jpg')
+  Article.last.photo.attach(io: file, filename: 'piedsdebbdodu.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+  title:"A Colmar, des chefs étoilés concoctent des repas gratuits pour les étudiants",
+  content:"Colmar - Un plat frais concocté par des chefs étoilés entre deux cours en visio: à Colmar, les restaurateurs et cuisiniers stars de la région se relaient pour préparer chaque jour cent repas offerts à des étudiants.
+  'C'est vraiment compliqué pour nous les étudiants. Cela fait déjà du bien d'avoir un plat équilibré en journée', confie, reconnaissante, cette étudiante en sciences alimentaires et contrôle qualité à Colmar. A la porte grande ouverte du Café Rapp, non loin du centre historique de la ville alsacienne, les étudiants se succèdent à partir de 11H30, présentant leur carte d'étudiant pour venir récupérer un repas à emporter après s'être inscrit sur la page Facebook de l'établissement.
+  Pour Auriane, 19 ans, 'est génial'. Comme les restaurants universitaires sont fermés, l'étudiante en DUT carrières juridiques déjeune généralement en vitesse avec 'des plats tout faits de mauvaise qualité'. 'Là, ça permet de manger quelque chose de bon et d'équilibré', se réjouit-elle. ",
+  category: "business,santé,france"
+  )
+  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616603485/The%20Cabbage%20Leaf/le-chef-etoile-olivier-nasti-g-distribue-des-repas-a-emporter-aux-etudiants-au-cafe-rap-a-colmar-haut-rhin-le-24-fevrier-2021_6295206_ueqquq.jpg')
+  Article.last.photo.attach(io: file, filename: 'chefresto.jpg', content_type: 'image/jpg')
+
+  Article.create!(
+    title:"L’Espagne va expérimenter la semaine de 32 heures de travail sans perte de salaire",
+    content:"Pour le même salaire, les Espagnols concernés par cette expérimentation travailleront un jour de moins dans la semaine. En Espagne, la semaine de quatre jours pourrait devenir une réalité. En tout cas, le concept est sur le point d’être testé à grande échelle : désormais des salariés travailleront quatre jours par semaine au lieu de cinq, 32 heures au lieu de 40, le tout, sans perte de salaire. Explications.
+    Cette expérimentation grandeur nature a été proposée par le parti de gauche Más País au gouvernement espagnol, et celui-ci a accepté. Selon le journal espagnol El Confidencial, 200 entreprises représentant entre 3 000 et 6 000 salariés devraient jouer les cobayes. Un groupe d’observateurs composé de syndicats, de chefs d’entreprises et d’universitaires aura pour mission de mesurer le succès du dispositif sur le plan de la productivité, de l’emploi et du bien-être des salariés.
+    Il s’agira notamment d’observer si un passage à la semaine de quatre jours entrainera une hausse de la productivité des salariés et si cette hausse suffira à compenser l’augmentation mécanique du coût horaire du travail.
+    Dans un article consacré à ce sujet, Ouest France rappelle qu’une entreprise espagnole a déjà fait le pari de la réduction du temps de travail. Depuis janvier, les 181 salariés ne travaillent plus que 36 heures par semaine et, l’été, ils passeront à 28 heures.
+    Résultats observés par Fulgencion Messeguer, président directeur général de Software Delsol ? «Plus de bien-être au travail et une plus grande productivité.» Les conclusions seront-elles les mêmes après un test à grande échelle ? L’expérimentation prévue en Espagne devrait permettre de répondre à cette question.",
+    category: "business,santé,europe"
+    )
+    file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616605404/The%20Cabbage%20Leaf/espagne-semaine-de-travail-de-quatre-jours-une-1024x535_vrxa5b.jpg')
+    Article.last.photo.attach(io: file, filename: 'ouvriere.jpg', content_type: 'image/jpg')
