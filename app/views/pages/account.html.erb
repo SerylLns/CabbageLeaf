@@ -18,6 +18,7 @@
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
       <p>Mes feuilles de chou à lire ou à relire</p>
+
       <!-- JS dropdow -->
       <form class="dropdown" action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
@@ -38,9 +39,11 @@
     <div class="account-card">
       <img src="<%=article.photo.url%>" alt="" class="img-card-top">
       <%= link_to article_path(article, to: "home") do  %>
-      <h4 class="title"><%= article.title %></h4>
+      <h4 class="title-account"><%= article.title %></h4>
       <% end %>
       <div class="divider"></div>
+
+       <!-- Gutten TAG -->
       <div class="index-tags">
         <% article.category.split(",").each do |cat| %>
         <p class="index-tag">#<%= cat %></p>
@@ -48,6 +51,7 @@
       </div>
     </div>
     <% end %>
+
   </div>
 </div>
 
