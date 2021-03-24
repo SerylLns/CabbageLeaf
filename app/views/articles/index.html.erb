@@ -13,7 +13,7 @@
       <!-- TAGS -->
       <div class="index-tags">
         <% article.category.split(",").each do |cat| %>
-          <p class="index-tag"><%=cat%></p>
+          <p class="index-tag">#<%=cat%></p>
         <% end %>
       </div>
 
@@ -38,7 +38,7 @@
         <div class="buttonChou">
           <div id = "btn-readLater" data-article=<%= article.id%>>
             <% if user_signed_in? && current_user.is_saved?(article) %>
-              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/eyes-25_ctwfof") %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
             <% else %>
               <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9") %>
             <% end %>

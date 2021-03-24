@@ -10,22 +10,26 @@
   <div class="card-applause">
     <div class="applause-head">
     <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj", class: "applause-img") %>
+
       <h4>Vous avez été nombreux à les applaudir !</h4>
+
       <div class="divider-plause"></div>
     </div>
     <div class="card-rank">
-       <%= render "shared/carousel", articles: @articles_liked %>  
+       <%= render "shared/carousel", articles: @articles_liked %>
     </div>
   </div>
 
   <div class="card-applause">
     <div class="applause-head">
     <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Choupette_clic-26_sx5kbd", class: "eyes-img") %>
+
       <h4>Vous avez été nombreux à les lire !</h4>
+
       <div class="divider-plause"></div>
     </div>
     <div class="card-rank">
-       <%= render "shared/carousel", articles: @articles_read %>  
+       <%= render "shared/carousel", articles: @articles_read %>
     </div>
   </div>
 
@@ -33,10 +37,15 @@
   <div class="card-applause">
     <div class="applause-head">
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9", class: "applause-img") %>
+
       <h4>Vous avez été nombreux à les sauvegarder !</h4>
+
       <div class="divider-rank"></div>
     </div>
+    <div class="card-rank">
       <%= render "shared/carousel", articles: @articles_saved %>
+    </div>
+
   </div>
 
 </div>
