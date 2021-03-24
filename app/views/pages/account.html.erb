@@ -14,8 +14,7 @@
     </div>
     <div class="account-info">
       <h3 class="account-name"><%= current_user.username %></h3>
-      <p>Graphic Designer <br> UX, UI Designer à votre service</p>
-
+      <p>Mes feuilles de chou à lire ou à relire</p>
       <!-- JS dropdow -->
       <form class="dropdown" action="/filter" method="get">
         <select placeholder="Trier par Tag" name="categorie" id="subject_input" required>
@@ -27,25 +26,26 @@
         </select>
         <button type="submit" class="hidden-dropdow" id="button-tag"></button>
       </form>
-
     </div>
   </div>
 
   <!-- Card blanche -->
-  <% @articles.each do |article| %>
-  <div class="account-card">
-    <img src="<%=article.photo.url%>" alt="" class="img-card-top">
-    <%= link_to article_path(article, to: "home") do  %>
-    <h4 class="title"><%= article.title %></h4>
-    <% end %>
-    <div class="divider"></div>
-    <div class="index-tags">
-      <% article.category.split(",").each do |cat| %>
-      <p class="index-tag">#<%= cat %></p>
+  <div class="account-cards">
+    <% @articles.each do |article| %>
+    <div class="account-card">
+      <img src="<%=article.photo.url%>" alt="" class="img-card-top">
+      <%= link_to article_path(article, to: "home") do  %>
+      <h4 class="title"><%= article.title %></h4>
       <% end %>
+      <div class="divider"></div>
+      <div class="index-tags">
+        <% article.category.split(",").each do |cat| %>
+        <p class="index-tag">#<%= cat %></p>
+        <% end %>
+      </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
 
 <!-- JS dropdow -->
