@@ -3,7 +3,7 @@
   // background-color: #ffff;
   display: flex;
   flex-direction: column;
-  padding-top: 5vh;
+  padding-top: 2vh;
   align-items: center;
 }
 
@@ -49,7 +49,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
+  margin: 0;
+  letter-spacing: 4px;
 
 }
 .account-info{
@@ -65,49 +67,58 @@
     padding-right: 15px;
     padding-left: 15px;
     letter-spacing: normal;
+    line-height: 1.4em;
+    margin: 0 0 10px 0;
   }
-}
-
-.leaf-right{
-  z-index: 3;
-  left: 56vw;
-  top: 13vh;
-  position: absolute;
-}
-.leaf-left{
-  top: 9vh;
-  right: 53vw;
-  position: absolute;
-  z-index: -1;
-}
-.leaf-right img{
-  width: 25vw;
-  transform: rotateZ(19deg);
-  z-index: 1;
-  margin-top: 6vh;
-}
-.leaf-left img{
-  transform: rotateZ(282deg);
-  width: 36vw;
-  margin-top: 5vh;
 }
 
 .dropdown {
   display: flex;
   justify-content: center;
   align-items: center;
+  select#subject_input{
+    width: 35vw;
+    height: 3vh;
+    background-color: $blue;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 1vh;
+    text-align-last: center;
+    font-family: 'Hurmegeo';
+    border: none;
+  }
 }
 
-#subject_input{
-  width: 35vw;
-  height: 3vh;
-  background-color: $blue;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 1vh;
-  text-align-last: center;
-  font-family: 'Hurmegeo';
+
+.leaf-right{
+  z-index: 3;
+  left: 56vw;
+  top: 11vh;
+  position: absolute;
+
+  img{
+    width: 25vw;
+    transform: rotateZ(19deg);
+    z-index: 1;
+    margin-top: 6vh;
+  }
 }
+
+.leaf-left{
+  top: 6vh;
+  right: 53vw;
+  position: absolute;
+  z-index: -1;
+
+  img{
+    transform: rotateZ(282deg);
+    width: 36vw;
+    margin-top: 5vh;
+  }
+}
+
+
+
 
 .select-tag {
   display: flex;
@@ -124,10 +135,7 @@
   width: 8vw;
   height: 3vh;
   opacity: 0;
-  text-decoration: none;
 }
-
-
 
 // .button-leaf {
 //   width: 11vw;
@@ -136,17 +144,24 @@
 //   right: 23vw;
 //   position: absolute;
 // }
-
-.account-card{
-  z-index: 2;
-  opacity: 1;
-  width: 80vw;
-  height: 40vh;
-  margin-bottom: 4vh;
-  box-shadow: 2px 2px 6px rgba(2,30,115,0.2);
-  border-radius: 1vh;
+.account-cards{
   position: relative;
+  top: -2vh;
+
+  .account-card{
+    z-index: 2;
+    opacity: 1;
+    width: 80vw;
+    height: 40vh;
+    margin-bottom: 4vh;
+    box-shadow: 2px 2px 6px rgba(2,30,115,0.2);
+    border-radius: 1vh;
+    position: relative;
+  }
 }
+
+
+
 
 .img-card-top{
   border-top-left-radius: 1vh;
