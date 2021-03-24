@@ -85,6 +85,18 @@
   }
 }
 
+.title-account{
+  color: $dark-blue;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Hurmegeo-bold";
+  padding: 0 10px 5px 10px;
+}
+
+
 .dropdown {
   display: flex;
   justify-content: center;
@@ -148,6 +160,8 @@
   opacity: 0;
 }
 
+
+
 // .button-leaf {
 //   width: 11vw;
 //   height: 4vh;
@@ -183,6 +197,10 @@
       font-size: 3.5vw;
       text-align: center;
       margin-bottom: 1vh;
+    }
+
+    .divider{
+      margin: 1vh auto;
     }
   }
 }
