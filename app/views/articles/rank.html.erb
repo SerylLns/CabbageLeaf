@@ -2,7 +2,7 @@
   <div class="head-rank">
     <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/nav-17_zjm5ml", class: "rank-img") %>
     <h3 class="rank-title">Classement</h3>
-    <p class="rank-head-text">Vous retrouverez ici les classements de vos articles préfères, ceux qui ont reçu le plus d’applaudisement, ceux qui ont été les plus sauvegardés.</p>
+    <p class="rank-head-text">Vos articles favoris, divisés en trois classements : les plus applaudis, les plus lus et les plus sauvegardés par la communauté.</p>
   </div>
 
   <%# ARTICLE APPLAUSE %>
@@ -10,7 +10,7 @@
   <div class="card-applause">
     <div class="applause-head">
     <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj", class: "applause-img") %>
-      <h4>Vous avez été beaucoup a les applaudire(a voir avec jérem)… </h4>
+      <h4>Vous avez été nombreux à les applaudir !</h4>
       <div class="divider-plause"></div>
     </div>
     <div class="card-rank">
@@ -21,7 +21,7 @@
   <div class="card-applause">
     <div class="applause-head">
     <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Choupette_clic-26_sx5kbd", class: "eyes-img") %>
-      <h4>Vous avez été beaucoup a les lire… </h4>
+      <h4>Vous avez été nombreux à les lire !</h4>
       <div class="divider-plause"></div>
     </div>
     <div class="card-rank">
@@ -33,7 +33,7 @@
   <div class="card-applause">
     <div class="applause-head">
       <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9", class: "applause-img") %>
-      <h4>Vous avez été beaucoup a les sauvegarder sur votre profil… </h4>
+      <h4>Vous avez été nombreux à les sauvegarder !</h4>
       <div class="divider-rank"></div>
     </div>
       <%= render "shared/carousel", articles: @articles_saved %>
