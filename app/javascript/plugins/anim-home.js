@@ -103,7 +103,6 @@ const animHome = () => {
             complete: function (homeTimeline) {
               const borderHome = document.querySelector('.home-border');
               borderHome.hidden = true;
-
               lastPageHome.hidden = true
             }
           })
