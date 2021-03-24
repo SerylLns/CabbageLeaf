@@ -37,11 +37,11 @@
   font-family: "Hurmegeo-bold";
   line-height: normal;
   margin-bottom: 10px;
-  padding:10px 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .index-content{
-  width: 90%;
+  width: 100%;
   text-align: center;
   margin: 2vh auto;
 }
@@ -53,6 +53,7 @@
   font-size: 14px;
   line-height: 1.2em;
   font-family: "Hurmegeo";
+  padding: 20px 20px;
   a {
     color: $light-lavander;
     line-height: 1.4em;
@@ -62,6 +63,9 @@
     padding:15px 20px;
     text-align: center;
   }
+  p {
+    margin: 0;
+  }
 }
 
 .divider{
@@ -69,7 +73,7 @@
   height: 3px;
   background-color: var(--light-lavander);
   content: "";
-  margin: 1vh auto;
+  margin: 2vh auto;
   border-radius: 25%;
 }
 
@@ -91,7 +95,7 @@
   color: $dark-blue;
   border-radius: 3px;
   // font-weight: 200;
-  font-size: 8px;
+  font-size: 9px;
   padding: 4px 8px 4px 8px;
   text-transform: uppercase;
   letter-spacing: 0.37em;
@@ -102,7 +106,7 @@
 
 .index-tags p {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     // width: 20vw;
     height: 3vh;
