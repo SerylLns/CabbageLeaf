@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title>Cette page n'existe pas, mon chou.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+
   .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
+    background-color: #A6CCFF;
+    color: #021E73;
     text-align: center;
-    font-family: arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
   }
 
@@ -18,29 +21,38 @@
     margin: 4em auto 0;
   }
 
-  .rails-default-error-page div.dialog > div {
+  /*.rails-default-error-page div.dialog > div {
     border: 1px solid #CCC;
     border-right-color: #999;
     border-left-color: #999;
     border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
+    border-top: #021E73 solid 4px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     background-color: white;
     padding: 7px 12% 0;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+  }*/
 
   .rails-default-error-page h1 {
+    font-size: 40.4px;
+    color: #021E73;
+    font-family: "Roboto", sans-serif;
+
+  }
+
+
+  .rails-default-error-page h2 {
     font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
+    color: #021E73;
+    font-family: "Roboto", sans-serif;
+
   }
 
   .rails-default-error-page div.dialog > p {
     margin: 0 0 1em;
     padding: 1em;
-    background-color: #F7F7F7;
+    background-color:#A6CCFF;
     border: 1px solid #CCC;
     border-right-color: #999;
     border-left-color: #999;
@@ -50,18 +62,41 @@
     border-top-color: #DADADA;
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+    opacity: 0.5;
   }
+
+  .logo{
+    width: 70vw;
+    height: 20vh;
+    background-image: url("https://res.cloudinary.com/df310vkui/image/upload/v1615989856/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/LOGO_theCabbageLeaf-03_uota7z.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+  .dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
   </style>
 </head>
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/404.html -->
   <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+    <div class="logo">
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <div>
+      <h1>Erreur 404</h1>
+      <h2>Cette page n'existe pas, mon chou.</h2>
+      <p>Pas de Chou'si, retourne donc <a href="https://thecabbageleaf.xyz">lire un petit coup </a></p>
+      <!-- <img src="https://media.giphy.com/media/Ksn86eRmE2taM/source.gif" alt="gif chou qui court"> -->
+    </div>
   </div>
 </body>
 </html>
