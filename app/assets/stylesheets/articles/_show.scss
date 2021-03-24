@@ -85,35 +85,9 @@
   justify-content: space-around;
   align-items: flex-end;
   width: 90%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-left: 2vh;
 }
-
-#chou{
-  height: 9vh;
-  width: 9vh;
-  fill: white;
-  z-index: 20;
-  opacity: 1;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 48%;
-  left: 50%;
-}
-
-#claps{
-  height: 9vh;
-  width: 9vh;
-  fill: white;
-  z-index: 20;
-  opacity: 1;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 33%;
-  left: 47%;
-}
-
 
 // TAGS
 .tag {
