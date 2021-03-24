@@ -60,6 +60,16 @@
   left:56%;
  }
 
-
+#btn-v img{
+  height: 6vh;
+  width: 6vh;
+  fill: white;
+  z-index: 20;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left:50%;
+}
 
 
