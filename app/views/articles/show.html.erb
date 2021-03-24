@@ -41,7 +41,11 @@
       <div class="buttonChou">
         <%= link_to article_path(@article) do  %>
         <div id = "btn-save">
+          <% if params[:to] == "home" %>
+          <%= cl_image_tag("https://res.cloudinary.com/df310vkui/image/upload/v1616591905/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/feuille_de_chou-click-24_hlr1ro.svg") %>
+          <% else %>
           <%= cl_image_tag("https://res.cloudinary.com/df310vkui/image/upload/v1615841139/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6.png")%>
+          <% end %>
           <% end %>
         </div>
         <div class = "btn-index"></div>
