@@ -1,0 +1,5 @@
+meta_product_name: "Cabbage Leaf"
+meta_title: "Cabbage Leaf - Deviens un petit chou"
+meta_description: "Tu ne sait pas ecrire et tu veut savoir si sa marche !"
+meta_image: "LOGO_theCabbageLeaf-03.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards

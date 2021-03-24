@@ -1,13 +1,12 @@
-.rank-fullpage{
-  flex-direction: column;
-  display: flex;
-  align-items: center;  
-}
+
 .rank-fullpage{
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(169,166,255,1) 44%, rgba(166,204,255,1) 100%);
   width: 100vw;
-  height: 200vh;
+  height: 130vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .head-rank{
@@ -42,7 +41,7 @@
   border-radius: 5px;
   width: 90vw;
   background-color: #fff;
-  height: 30vh;
+  height: 25vh;
   margin-bottom: 5vh;
 }
 .applause-head{
