@@ -34,21 +34,21 @@
         <% end %>
           <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         </div>
-        <div class="btn-index"></div>
+        <div class="btn-index-clap"></div>
       </div>
 
       <!-- Button Cabbage leaf - Read later -->
       <div class="buttonChou">
         <%= link_to article_path(@article) do  %>
-        <div id = "btn-save">
+        <div id = "chou">
           <% if params[:to] == "home" %>
-            <%= cl_image_tag("https://res.cloudinary.com/df310vkui/image/upload/v1616591905/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/feuille_de_chou-click-24_hlr1ro.svg") %>
+            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
             <% else %>
-            <%= cl_image_tag("https://res.cloudinary.com/df310vkui/image/upload/v1615841139/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/LOGO_theCabbageLeaf_violet_fondBlanc-08_itfnx6.png")%>
+            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
           <% end %>
         <% end %>
         </div>
-        <div class = "btn-index"></div>
+        <div class = "btn-index-chou"></div>
       </div>
     </div>
 
