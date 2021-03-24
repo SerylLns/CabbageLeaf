@@ -3,7 +3,7 @@
 
 .barres{
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   width: 7vw;
   height: 6vh;
   font-family: $body-font;
@@ -74,7 +74,7 @@
   transition: 1s;
   background-color: $very-light-lavander;
   right: -70vw;
-  position: absolute;
+  position: fixed;
   z-index: 45;
   font-family: Roboto, sans-serif;
   display: flex;

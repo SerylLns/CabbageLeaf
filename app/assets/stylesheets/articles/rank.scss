@@ -23,7 +23,7 @@
   width: 20vw;
 }
 .rank-title{
-  margin-top: 1vh;
+  margin-top: 2vh;
   font-weight: 800;
   font-size: 24px;
   letter-spacing: 0.4em;
@@ -52,7 +52,7 @@
     width: 20vw;
   }
   h4{
-    margin-top: 4vh;
+    margin-top: 2vh;
     text-transform: uppercase;
     color: $dark-blue;
     width: 70%;
@@ -68,4 +68,9 @@
   position: fixed;
   right: -10vw;
   top: 26vh;
+}
+.eyes-img{
+
+  width: 10vh;
+  margin: 5px 10px;
 }
