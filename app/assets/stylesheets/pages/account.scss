@@ -100,7 +100,11 @@
     font-family: 'Hurmegeo';
     border: none;
   }
+  .hidden-dropdow{
+    display: none;
+  }
 }
+
 
 
 .leaf-right{
@@ -131,15 +135,9 @@
 }
 
 
-
-
 .select-tag {
   display: flex;
   justify-content: center;
-}
-
-.hidden-dropdow{
-  display: none;
 }
 
 #button-tag {
@@ -157,11 +155,11 @@
 //   right: 23vw;
 //   position: absolute;
 // }
-.account-cards{
+.account-cards {
   position: relative;
   top: -2vh;
 
-  .account-card{
+  .account-card {
     z-index: 2;
     opacity: 1;
     width: 80vw;
@@ -170,26 +168,26 @@
     box-shadow: 2px 2px 6px rgba(2,30,115,0.2);
     border-radius: 1vh;
     position: relative;
+
+    .img-card-top {
+      border-top-left-radius: 1vh;
+      border-top-right-radius: 1vh;
+      height: 55%;
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+
+    h4 {
+      margin-left: 2vw;
+      margin-right: 2vw;
+      font-size: 3.5vw;
+      text-align: center;
+      margin-bottom: 1vh;
+    }
   }
 }
 
 
 
-
-.img-card-top{
-  border-top-left-radius: 1vh;
-  border-top-right-radius: 1vh;
-  height: 55%;
-  width: 100%;
-  margin-bottom: 2vh;
-}
-
-.account-card h4{
-  margin-left: 2vw;
-  margin-right: 2vw;
-  font-size: 3.5vw;
-  text-align: center;
-  margin-bottom: 1vh;
-}
 
 
