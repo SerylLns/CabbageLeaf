@@ -19,6 +19,19 @@
   align-items: center;
 }
 
+.edit-button {
+  text-decoration: underline 2px;
+  text-underline-offset: 2px;
+  color: $dark-blue;
+  font-family: "Hurmegeo-bold";
+  width: 3.5vw;
+  font-style: uppercase;
+  position: absolute;
+  top: 3.5vh;
+  left: 3vh;
+  letter-spacing: 3px;
+}
+
 .cercle {
   height: 160px;
   width:160px;
