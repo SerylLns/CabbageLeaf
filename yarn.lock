@@ -849,7 +849,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@popperjs/core@^2.5.2":
+"@popperjs/core@^2.9.1":
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.1.tgz#7f554e7368c9ab679a11f4a042ca17149d70cf12"
   integrity sha512-DvJbbn3dUgMxDnJLH+RZQPnXak1h4ZVYQ7CWiFWjQwBFkVajT4rfw2PdpHLTSTwxrYfnoEXkuBiwkDm6tPMQeA==
@@ -6580,12 +6580,12 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
-shepherd.js@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/shepherd.js/-/shepherd.js-8.1.0.tgz#810b72a6ddf16f6e953126a1315108cc5709f7ce"
-  integrity sha512-mWab5hn2cdSdv5XF3IbBYyT2wPejAjK0flycbkRxqS1c+4epkKRMhpW9Eco6swDCu65wUP7PcecdjayokwI+Vg==
+shepherd.js@^8.2.2:
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/shepherd.js/-/shepherd.js-8.2.2.tgz#63a3ac7d47aecdf92e3584e7414fb7de7e7be9b3"
+  integrity sha512-p2l6K7pF6Db1gTfy8mcxwsqhb9f0BiFDXvHOhDDBfpvMoUJ5zKPET/lUoLghicg538cKaUlySqkkn1+4d9FqKQ==
   dependencies:
-    "@popperjs/core" "^2.5.2"
+    "@popperjs/core" "^2.9.1"
     deepmerge "^4.2.2"
     smoothscroll-polyfill "^0.4.4"
 
