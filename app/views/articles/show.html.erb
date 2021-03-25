@@ -24,7 +24,7 @@
       <!-- Button Cabbage leaf - Read later -->
       <% if params[:to] %>
         <%= link_to account_path, class: "btn-index-chou" do %>
-          <%= cl_image_tag "The Cabbage Leaf/LOGO - PICTO/violette_arrow-16_qsiuse", class: "fleche-back-chou" %>
+          <%= cl_image_tag "The Cabbage Leaf/LOGO - PICTO/violette_arrow-16_qsiuse", id: "fleche-back-chou" %>
         <% end %>
         <%= link_to article_interactions_like_path(@article, to: "home"), class: "btn-index-chou" do %>
           <% if user_signed_in? && current_user.is_liked?(@article) %>
