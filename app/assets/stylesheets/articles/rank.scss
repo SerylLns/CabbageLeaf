@@ -44,15 +44,22 @@
   height: 23vh;
   margin-bottom: 2vh;
 }
+
+
+// head applause
 .applause-head{
   display: flex;
   flex-direction: row;
   align-items: center;
   .applause-img{
-    width: 20vw;
+    width: 22vw;
+    position: absolute;
+    top: -1vh;
+    left: 0.6vh;
   }
   h4{
     margin-top: 2vh;
+    margin-left: 10vh;
     text-transform: uppercase;
     color: $dark-blue;
     width: 70%;
@@ -60,6 +67,52 @@
     font-size: 16px;
   }
 }
+
+// head read
+.head-read{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .eyes-img{
+    width: 19vw;
+    position: absolute;
+    top: 3px;
+  }
+  h4{
+    margin-top: 2vh;
+    margin-left: 12vh;
+    text-transform: uppercase;
+    color: $dark-blue;
+    width: 70%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+
+//head save
+.head-save{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .head-save-img{
+    width: 22vw;
+    position: absolute;
+    top: 2px;
+    left: 0.7vh;
+  }
+  h4{
+    margin-top: 2vh;
+    margin-left: 10vh;
+    text-transform: uppercase;
+    color: $dark-blue;
+    width: 70%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+
 
 .rank-chou1{
   z-index: 1;

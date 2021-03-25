@@ -8,9 +8,9 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     @interaction = Interaction.new
   end
-  
+
   def show
-      @article = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def rank

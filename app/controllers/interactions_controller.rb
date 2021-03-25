@@ -3,17 +3,16 @@ class InteractionsController < ApplicationController
 
   def read_later
     interaction = current_user.find_interaction(@article)
-    if  interaction && interaction.read_later == true
-    elsif interaction
+    if interaction && interaction.read_later == true
+      interaction.read_later = false
+    elsif interaction && interaction.read_later == false
       interaction.read_later = true
-      interaction.save
-      redirect_to article_path(@article)
     else
       interaction = Interaction.create(user: current_user, article: @article)
       interaction.read_later = true
-      interaction.save
-      redirect_to article_path(@article)
     end
+    interaction.save
+    redirect_to article_path(@article)
   end
 
   def show
@@ -23,31 +22,43 @@ class InteractionsController < ApplicationController
 
   def like
     interaction = current_user.find_interaction(@article)
-    if  interaction && interaction.liked == true
-      redirect_to article_path(@article), notice: "article deja liké "
+    if interaction && interaction.liked == true
+      if params[:to]
+        redirect_to article_path(@article, to: "home"), notice: "article deja liké "
+      else
+        redirect_to article_path(@article), notice: "article deja liké "
+      end
     elsif interaction
       interaction.liked = true
       interaction.save
-      redirect_to article_path(@article)
+      if params[:to]
+        redirect_to article_path(@article, to: "home")
+      else
+        redirect_to article_path(@article)
+      end
     else
       interaction = Interaction.create(user: current_user, article: @article)
       interaction.liked = true
       interaction.save
-      redirect_to article_path(@article), notice: "interaction créer et liké "
+      if params[:to]
+        redirect_to article_path(@article, to: "home"), notice: "interaction créer et liké "
+      else
+        redirect_to article_path(@article), notice: "interaction créer et liké "
+      end
     end
   end
 
   def read
     interaction = current_user.find_interaction(@article)
     # deja lu
-    if interaction && interaction.has_read == true  
-    elsif interaction 
+    if interaction && interaction.has_read == true
+    elsif interaction
       # jamais lu mais enregistrer pour plus tard ou liké
       interaction.has_read = true
       interaction.save
       redirect_to article_path(@article)
     else
-      # Jamais lu et jamais liké ou enregistrer  
+      # Jamais lu et jamais liké ou enregistrer
       interaction = Interaction.new(user: current_user, article: @article)
       interaction.has_read = true
       interaction.save!

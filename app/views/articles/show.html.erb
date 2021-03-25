@@ -20,45 +20,64 @@
     <div class="text">
       <p> <%= @article.content %></p>
     </div>
-
-    <!-- Button Applause -->
     <div class="conteuhnaire">
+      <!-- Button Cabbage leaf - Read later -->
+      <div class="buttonChou">
+        <% if params[:to] %>
+          <div id="chou">
+            <%= link_to account_path do %>
+            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/violette_arrow-16_qsiuse", class: "fleche-back-chou")%>
+            <% end %>
+          </div>
+        <% else %>
+          <%= link_to article_interactions_read_later_path(@article) do  %>
+          <div id = "chou">
+            <% if @article.interactions.count > 0 %>
+              <% if @article.interactions.first.read_later %>
+               <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
+              <% else %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
+              <% end %>
+            <% else %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
+            <% end %>
+          <% end %>
+        </div>
+        <% end %>
+        <div class = "btn-index-chou"></div>
+      </div>
+      <!-- Button Applause -->
       <div class="buttonChou">
         <div id="claps">
-        <%= link_to article_interactions_like_path(@article) do %>
-          <% if user_signed_in? && current_user.is_liked?(@article) %>
-              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/clap_click-26_oovvwp") %>
+          <% if params[:to] %>
+            <%= link_to article_interactions_like_path(@article, to: "home") do %>
+              <% if user_signed_in? && current_user.is_liked?(@article) %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/clap_click-26_oovvwp") %>
+              <% else %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+              <% end %>
+            <% end %>
           <% else %>
-              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+            <%= link_to article_interactions_like_path(@article) do %>
+              <% if user_signed_in? && current_user.is_liked?(@article) %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/clap_click-26_oovvwp") %>
+              <% else %>
+                <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/mains_vfqptj") %>
+              <% end %>
+            <% end %>
           <% end %>
-        <% end %>
           <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         </div>
         <div class="btn-index-clap"></div>
       </div>
-
-      <!-- Button Cabbage leaf - Read later -->
-      <div class="buttonChou">
-        <%= link_to article_path(@article) do  %>
-        <div id = "chou">
-          <% if params[:to] == "home" %>
-            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
-            <% else %>
-            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
-          <% end %>
-        <% end %>
-        </div>
-        <div class = "btn-index-chou"></div>
-      </div>
     </div>
-
     <!-- tags de bas de page -->
     <div class="tag">
       <% @article.category.split(",").each do |cat| %>
       <p class="texte-tag">#<%= cat %></p>
-        <% unless @article.category.split(",").index(cat) == (@article.category.split(",").count - 1) %>
-        <p class="pipe">|</p>
-        <% end %>
+      <% unless @article.category.split(",").index(cat) == (@article.category.split(",").count - 1) %>
+      <p class="pipe">|</p>
+      <% end %>
       <% end %>
     </div>
   </div>
