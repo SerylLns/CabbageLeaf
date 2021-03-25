@@ -24,7 +24,9 @@
       </div>
     </div>
     <div class="buttons-index">
-
+    <% if user_signed_in? %>
+      <span hidden class="startpop"></span>
+    <% end %>
       <%# BTN Delete %>
       <div class="buttonChou">
         <div id = "delete-btn">

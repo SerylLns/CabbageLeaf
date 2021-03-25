@@ -223,6 +223,7 @@ Article.create!(
   Et après avoir fabriqué cette imprimante, on s’est rendus compte qu’on pouvait fabriquer plein de choses sur l’île. Et c’est comme ça qu’avec notre équipe technique, on a abouti à la fabrication du premier PC solaire fabriqué à Mada, en local, du design aux entrailles du PC, jusqu’aux circuits imprimés.»",
   category: "écologie,innovation,afrique"
   )
+
   file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/c_scale,h_190,q_auto:good,w_337/v1616662162/ORDI-SOLAIRE_gg7z1y.jpg')
   Article.last.photo.attach(io: file, filename: 'equipeingé.jpg', content_type: 'image/jpg')
 
