@@ -22,17 +22,29 @@ class InteractionsController < ApplicationController
 
   def like
     interaction = current_user.find_interaction(@article)
-    if  interaction && interaction.liked == true
-      redirect_to article_path(@article), notice: "article deja liké "
+    if interaction && interaction.liked == true
+      if params[:to]
+        redirect_to article_path(@article, to: "home"), notice: "article deja liké "
+      else
+        redirect_to article_path(@article), notice: "article deja liké "
+      end
     elsif interaction
       interaction.liked = true
       interaction.save
-      redirect_to article_path(@article)
+      if params[:to]
+        redirect_to article_path(@article, to: "home")
+      else
+        redirect_to article_path(@article)
+      end
     else
       interaction = Interaction.create(user: current_user, article: @article)
       interaction.liked = true
       interaction.save
-      redirect_to article_path(@article), notice: "interaction créer et liké "
+      if params[:to]
+        redirect_to article_path(@article, to: "home"), notice: "interaction créer et liké "
+      else
+        redirect_to article_path(@article), notice: "interaction créer et liké "
+      end
     end
   end
 
