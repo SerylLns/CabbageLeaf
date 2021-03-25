@@ -41,8 +41,8 @@
   border-radius: 5px;
   width: 90vw;
   background-color: #fff;
-  height: 25vh;
-  margin-bottom: 5vh;
+  height: 23vh;
+  margin-bottom: 2vh;
 }
 .applause-head{
   display: flex;
@@ -68,6 +68,15 @@
   position: fixed;
   right: -10vw;
   top: 26vh;
+}
+
+.rank-chou-compo{
+  z-index: 1;
+  transform: rotateZ(-1deg);
+  width: 43vw;
+  position: fixed;
+  left: -11vw;
+  bottom: 7vh;
 }
 .eyes-img{
 
