@@ -1,0 +1,21 @@
+{
+  "short_name": "TheCabbageLeaf",
+  "name": "The Cabbage Leaf",
+  "icons": [
+    {
+      "src": "/icons/LOGO_theCabbageLeaf_Plan de travail.png",
+      "sizes": "121x104",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/CHOU_VIOLET-11_a7zl7b.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#DADADA",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#DADADA"
+}
