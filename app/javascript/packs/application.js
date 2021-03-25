@@ -25,16 +25,13 @@ import { animMenu } from '../plugins/anim-menu'
 import { animCard } from '../plugins/animate-indexcard'
 import { carousel } from '../plugins/carousel'
 import { hasRead } from '../plugins/has_read'
-
-// import { toggleColor } from '../plugins/color-mood'
-
+import { overboarding } from '../plugins/overboarding'
 document.addEventListener('turbolinks:load', () => {
   animMenu();
   animHome();
   animCard();
-  // toggleColor();
   carousel();
   hasRead();
-  // animRank();
-  // document.documentElement.style.setProperty("--lightblue","#4CAF50");
+  overboarding();
+  
 });
