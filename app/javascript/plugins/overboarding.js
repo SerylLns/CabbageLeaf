@@ -4,7 +4,7 @@ let isFinish = false;
 const overboarding = () => {
   const button = document.querySelectorAll(".buttonChou");
   const starting = document.querySelector(".startpop");
-  
+
   const tour = new Shepherd.Tour({
     defaultStepOptions: {
       cancelIcon: {
@@ -30,7 +30,7 @@ const overboarding = () => {
   });
   tour.addStep({
     id: 'example-step',
-    text: 'Tu peux sauvegarder cet article dans tes favories ',
+    text: 'Tu peux sauvegarder cet article dans tes favoris ',
     attachTo: {
       element: button[1],
       on: 'bottom'
@@ -44,7 +44,7 @@ const overboarding = () => {
   });
   tour.addStep({
     id: 'example-step',
-    text: "Tu peux lire l'article immediatement ",
+    text: "Tu peux lire l'article immédiatement ",
     attachTo: {
       element: button[2],
       on: 'bottom'
