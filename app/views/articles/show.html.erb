@@ -39,11 +39,15 @@
 
       <!-- Button Cabbage leaf - Read later -->
       <div class="buttonChou">
-        <%= link_to article_path(@article) do  %>
+        <%= link_to article_interactions_read_later_path(@article) do  %>
         <div id = "chou">
-          <% if params[:to] == "home" %>
-            <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
+          <% if @article.interactions.count > 0 %>
+            <% if @article.interactions.first.read_later %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/feuille_de_chou-click-24_hlr1ro") %>
             <% else %>
+              <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
+            <% end %>
+          <% else %>
             <%= cl_image_tag("The Cabbage Leaf/LOGO - PICTO/Arrow_thecabbage_leaf-05_yy0ug9")%>
           <% end %>
         <% end %>
