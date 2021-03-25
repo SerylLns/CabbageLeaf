@@ -23,7 +23,7 @@
   opacity: .5;
   position:relative;
   margin-bottom: 2vh;
-  margin-right: 3vh;
+  margin-left: 1vh;
 }
 
 #chou{
@@ -34,8 +34,8 @@
   opacity: 1;
   position: absolute;
   transform: translate(-50%,-50%);
-  top: 52%;
-  left: 41%;
+  top: 2.9em;
+  left: 3em;
 }
 
 .btn-index-clap{
@@ -46,7 +46,7 @@
   opacity: .5;
   position:relative;
   margin-bottom: 2vh;
-  margin-left: 3vh;
+  margin-left: -11vh;
 }
 
 #claps{
@@ -57,8 +57,8 @@
   opacity: 1;
   position: absolute;
   transform: translate(-50%,-50%);
-  top: 39%;
-  left: 64%;
+  top: 2.3em;
+  right: -1.1em;
 }
 
 
@@ -84,17 +84,6 @@
   left:53%;
  }
 
-// #btn-save{
-//   height: 9vh;
-//   width: 9vh;
-//   fill: white;
-//   z-index: 20;
-//   opacity: 1;
-//   position: absolute;
-//   transform: translate(-50%, -50%);
-//   top: 50%;
-//   left:50%;
-// }
 
 #btn-readLater{
   height: 10vh;
@@ -120,4 +109,13 @@
   left:50%;
 }
 
+// Show - pages (Account)
+
+.fleche-back-chou{
+  width: 6vh;
+  left: 0.5em;
+  top: 0.2em;
+  position: absolute;
+  z-index: 1000;
+}
 
