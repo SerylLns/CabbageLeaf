@@ -45,11 +45,6 @@ Article.create!(
 )
 file = URI.open('https://img.lemde.fr/2020/09/02/0/0/6000/4000/1328/0/45/0/2d7f179_5252699-01-06.jpg')
 Article.last.photo.attach(io: file, filename: 'deuxfemmes.png', content_type: 'image/jpg')
-Interaction.create!(
-  article: Article.last,
-  read_later: true,
-  user: User.last
-)
 
 # 3st Time
 User.create!(

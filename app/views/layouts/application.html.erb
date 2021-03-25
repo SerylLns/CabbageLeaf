@@ -36,8 +36,8 @@
     <%= render 'shared/flashes' %>
     <%# <% unless current_page?(root_url) %>
     <%# <% end %>
-    <% unless current_page?(root_url) %>
-        <%= render  "shared/navbar" %>   
+    <% unless current_page?(root_path) %>
+        <%= render  "shared/navbar" %>
     <% end %>
 
     <%= yield %>
