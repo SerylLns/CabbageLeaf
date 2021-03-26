@@ -113,6 +113,7 @@ Article.last.photo.attach(io: file, filename: 'velovelovelo.png', content_type: 
 Interaction.create!(
   article: Article.last,
   read_later: true,
+  has_read: true,
   user: User.last
 )
 # 6X
@@ -130,6 +131,12 @@ Article.create!(
 )
 file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911045/The%20Cabbage%20Leaf/polio2_yavfqz.jpg')
 Article.last.photo.attach(io: file, filename: 'petitafricain.png', content_type: 'image/jpg')
+Interaction.create!(
+  article: Article.last,
+  read_later: true,
+  has_read: true,
+  user: User.last
+)
 # 7X
 Article.create!(
   title:"L'Égypte interdit les promenades touristiques à dos de dromadaire",
@@ -141,6 +148,12 @@ Article.create!(
 )
 file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911530/The%20Cabbage%20Leaf/jeune-chameau_rgy5bg.jpg')
 Article.last.photo.attach(io: file, filename: 'deschamals.jpg', content_type: 'image/jpg')
+Interaction.create!(
+  article: Article.last,
+  read_later: true,
+  has_read: true,
+  user: User.last
+)
 # 10X
 Article.create!(
   title:"Allonger le congé paternité : une nouvelle avancée.",
@@ -152,6 +165,11 @@ Article.create!(
   )
   file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615911917/The%20Cabbage%20Leaf/iStock-homme-bebe-conge-paternite_rn4m5o.jpg')
   Article.last.photo.attach(io: file, filename: 'papa.png', content_type: 'image/jpg')
+  Interaction.create!(
+  article: Article.last,
+  liked: true,
+  user: User.last
+  )
   # 9X
   Article.create!(
     title:"Joe Biden annonce le retour des États-Unis dans l’accord de Paris sur le climat",
@@ -172,7 +190,11 @@ Article.create!(
   )
   file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1615912232/The%20Cabbage%20Leaf/bibi_kzsoqa.jpg')
   Article.last.photo.attach(io: file, filename: 'donaldtrump.png', content_type: 'image/png')
-
+  Interaction.create!(
+  article: Article.last,
+  liked: true,
+  user: User.last
+  )
   Article.create!(
   title:"L'histoire courageuse de la nouvelle directrice de la NASA pour le projet Mars Rover",
   content:"Pour une petite fille qui a grandi en Colombie dans les années 1980, une carrière scientifique à la NASA a peut-être semblé aussi probable que de mettre le pied sur une planète lointaine. De nos jours, cependant, Diana Trujillo est ingénieure en aérospatiale.
@@ -195,7 +217,11 @@ Article.create!(
   )
   file = URI.open('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fwww.goodnewsnetwork.org%2Fwp-content%2Fuploads%2F2021%2F03%2FDiana_Trujillo-public-domain-NASA-on-the-Commons-%40-Flickr-Commons.jpg')
   Article.last.photo.attach(io: file, filename: 'lameufastronaute.jpg', content_type: 'image/jpg')
-
+  Interaction.create!(
+  article: Article.last,
+  liked: true,
+  user: User.last
+  )
   Article.create!(
     title:"Un train qui roule à l'hydrogène en septembre",
     content:"La SNCF est engagée dans un ambitieux plan en faveur de sa transition énergétique, du verdissement du ferroviaire et de la neutralité carbone, qu'elle compte atteindre en 2050. Pour y parvenir, elle investit notamment dans des rames à hydrogène. Un premier train a déjà été expérimenté dans différents pays d'Europe. Il devrait être testé en France, sur un tronçon régional, en septembre prochain.
@@ -208,10 +234,11 @@ Article.create!(
     )
     file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616601514/The%20Cabbage%20Leaf/SNCF_jrfno7.webp')
     Article.last.photo.attach(io: file, filename: 'petittrainbleudelasncf.jpg', content_type: 'image/jpg')
-
-
-  file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/c_scale,h_190,q_auto:good,w_337/v1616662162/ORDI-SOLAIRE_gg7z1y.jpg')
-  Article.last.photo.attach(io: file, filename: 'equipeingé.jpg', content_type: 'image/jpg')
+    Interaction.create!(
+    article: Article.last,
+    liked: true,
+    user: User.last
+    )
 
   Article.create!(
   title:"Mondiaux de ski de bosses : Perrine Laffont championne du monde en ski de bosses individuel, Benjamin Cavet décroche l'argent",
@@ -223,7 +250,11 @@ Article.create!(
   )
   file = URI.open('https://res.cloudinary.com/df310vkui/image/upload/v1616602443/The%20Cabbage%20Leaf/043_sw_ttnews010794_ptjhow.jpg')
   Article.last.photo.attach(io: file, filename: 'allezlesbleus.jpg', content_type: 'image/jpg')
-
+  Interaction.create!(
+  article: Article.last,
+  liked: true,
+  user: User.last
+  )
   Article.create!(
   title:"Leclerc s’apprête à proposer une semaine de repas à 21 € tout compris",
   content:"À partir du lundi 8 mars, le géant de la grande distribution va proposer dans tous ses magasins une offre destinée aux petits budgets : une semaine de repas, soit 21 au total, au prix de 1 € par repas. L’enseigne promet des produits respectant les recommandations nutritionnelles.
