@@ -7,96 +7,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
 
-  .rails-default-error-page {
-    background-color: #A6CCFF;
-    color: #021E73;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-  }
-
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
-
-  /*.rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #021E73 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }*/
-
-  .rails-default-error-page h1 {
-    font-size: 40.4px;
-    color: #021E73;
-    font-family: "Roboto", sans-serif;
-
-  }
+    
+/*======================
+    404 page
+=======================*/
 
 
-  .rails-default-error-page h2 {
-    font-size: 100%;
-    color: #021E73;
-    font-family: "Roboto", sans-serif;
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
 
-  }
+.page_404  img{ width:100%;}
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color:#A6CCFF;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-    opacity: 0.5;
-  }
-
-  .logo{
-    width: 70vw;
-    height: 20vh;
-    background-image: url("https://res.cloudinary.com/df310vkui/image/upload/v1615989856/The%20Cabbage%20Leaf/LOGO%20-%20PICTO/LOGO_theCabbageLeaf-03_uota7z.png");
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-  }
-
-  .dialog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-  }
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       }
+       
+       .link_404{      
+  color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+  .contant_box_404{ margin-top:-50px;}
 
   </style>
 </head>
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div class="logo">
+<section class="page_404">
+  <div class="container">
+    <div class="row"> 
+    <div class="col-sm-12 ">
+    <div class="col-sm-10 col-sm-offset-1  text-center">
+    <div class="four_zero_four_bg">
+      <h1 class="text-center ">404</h1>
+    
+    
     </div>
-    <div>
-      <h1>Erreur 404</h1>
-      <h2>Cette page n'existe pas, mon chou.</h2>
-      <p>Pas de Chou'si, retourne donc <a href="https://thecabbageleaf.xyz">lire un petit coup </a></p>
-      <!-- <img src="https://media.giphy.com/media/Ksn86eRmE2taM/source.gif" alt="gif chou qui court"> -->
+    
+    <div class="contant_box_404">
+    <h3 class="h2">
+    Tu t'est perdu petit chou ?
+    </h3>
+    
+    
+    <a href="/articles" class="link_404">Go to Home</a>
+  </div>
+    </div>
+    </div>
     </div>
   </div>
+</section>
 </body>
 </html>
